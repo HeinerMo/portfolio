@@ -1,0 +1,36 @@
+.navItems {
+    margin-top: 8em;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.navUl {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: larger;
+    text-align: center;
+    color: white;
+    border: 3px solid rgba(98, 92, 184, 0);
+    font-weight: 800;
+    margin: 1em;
+}
+
+li:hover {
+    border: 3px solid rgba(98, 92, 184, 0.233);
+}
+
+li:active {
+    background-color: rgb(154, 134, 226);
+}
+
+a {
+    all: unset
+}

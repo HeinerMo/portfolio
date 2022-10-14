@@ -1,0 +1,8 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+body {
+    background: rgb(29,33,88);
+    background: linear-gradient(40deg, rgba(29,33,88,1) 0%, rgba(79,46,91,1) 100%); 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
