@@ -1,30 +1,46 @@
 .navItems {
-    margin-top: 8em;
-    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 4em;
     text-align: center;
-    width: 100%;
     height: fit-content;
+    display: flex;
+    justify-content: center;
 }
 
 .navUl {
+    width: 50%;
     list-style-type: none;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
     margin: 0;
     padding: 0;
 }
 
 li {
-    font-size: larger;
     text-align: center;
     color: white;
-    border: 3px solid rgba(98, 92, 184, 0);
-    font-weight: 800;
-    margin: 1em;
+    border: 2px solid rgba(98, 92, 184, 0);
+    font-weight: 600;
+    margin: 0.5em;
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
 }
 
 li:hover {
-    border: 3px solid rgba(98, 92, 184, 0.233);
+    border: 2px solid rgba(98, 92, 184, 0.233);
+    border-radius: 3px;
+
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition: transform 0.1s ease-in-out;
+    -ms-transition: transform 0.1s ease-in-out;
+
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 li:active {

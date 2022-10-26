@@ -1,8 +1,14 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 body {
-    background: rgb(29,33,88);
-    background: linear-gradient(40deg, rgba(29,33,88,1) 0%, rgba(79,46,91,1) 100%); 
+    background: linear-gradient(40deg, rgb(10, 11, 27) 0%, rgb(17, 0, 27) 100%); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    background-size: cover;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
 }
