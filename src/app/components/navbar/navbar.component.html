@@ -1,8 +1,11 @@
 <nav class="container-fluid">
-    <div class="navItems">
+    <!--TODO collapse navbar-->
+    <div class="navItems navbar-collapse">
         <ul class="navUl">
-            <li class="navLi"><a href="home">Inicio</a></li>
-            <li class="navLi"><a href="projects">Proyectos</a></li>
+            <li class="navLi" routerLink="/app-home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</li>
+            <li class="navLi" routerLink="/app-about" routerLinkActive="active" ariaCurrentWhenActive="page">About</li>
+            <li class="navLi" routerLink="/app-projects" routerLinkActive="active" ariaCurrentWhenActive="page">Projects</li>
+            <li class="navLi" routerLink="/app-home" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</li>
         </ul>
     </div>
 </nav>
