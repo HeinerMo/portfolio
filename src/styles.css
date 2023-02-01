@@ -1,14 +1,33 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+html {
+    min-height: 100%;
+}
+
 body {
-    background: linear-gradient(40deg, rgb(10, 11, 27) 0%, rgb(17, 0, 27) 100%); 
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin: 0;
+    background: #fefae5; 
     padding: 0;
-    background-size: cover;
+    margin: 5%;
+    min-height: 100%;
+}
+
+.shadowed {
+    box-shadow: -2em 2em #10162f;
+}
+
+.outlined {
+    border: 2px solid #10162f;
 }
 
 .center-content {
     display: flex;
     justify-content: center;
 }
+
+.normal-text {
+    color: #10162f;
+}
+
+p, h1, h2, h3 {
+    color: #10162f;
+}
+

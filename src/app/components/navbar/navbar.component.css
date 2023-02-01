@@ -1,33 +1,33 @@
-.navItems {
+.nav-Container {
     margin-top: 1em;
     margin-bottom: 4em;
-    text-align: center;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
 }
 
-.navUl {
+.nav-Ul {
     width: 50%;
     list-style-type: none;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin: 0;
+    margin-left: 1em;
     padding: 0;
+    text-align: center;
 }
 
-li {
-    text-align: center;
-    color: white;
-    border: 2px solid rgba(98, 92, 184, 0);
-    font-weight: 600;
-    margin: 0.5em;
+.nav-Li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    height: 100%;
+    font-size: large;
+    font-weight: 1000;
     -webkit-transition: transform 0.1s ease-in-out;
     -moz-transition: transform 0.1s ease-in-out;
     transition: transform 0.1s ease-in-out;
 }
 
-li:hover {
+.nav-Li:hover {
+
     border: 2px solid rgba(98, 92, 184, 0.233);
     border-radius: 3px;
 
@@ -43,7 +43,7 @@ li:hover {
     transform: scale(1.05);
 }
 
-li:active {
+.nav-Li:active {
     background-color: rgb(154, 134, 226);
 }
 
