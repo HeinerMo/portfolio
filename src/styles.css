@@ -1,18 +1,26 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 html {
-    height: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
 }
 
 body {
     background: #fefae5; 
-    padding: 0;
+    padding: 4em;
+    padding-top: 0em;
     margin: 3em;
-    min-height: 80%;
+    min-height: fit-content;
+    width: 80%;
 }
 
 .shadowed {
     box-shadow: -2em 2em #10162f;
+}
+
+.shadowed-small {
+    box-shadow: -0.5em 0.5em #10162f;
 }
 
 .outlined {
@@ -24,11 +32,67 @@ body {
     justify-content: center;
 }
 
+.left-content {
+    display: flex;
+    justify-content: left;
+}
+
 .normal-text {
     color: #10162f;
+}
+
+.default-radius {
+    border-radius: 5px;
 }
 
 p, h1, h2, h3 {
     color: #10162f;
 }
 
+/*
+    Subtitles appear under and to the left of the navbar, representing the name of
+    any given subcategory.
+*/
+.subtitle {
+    color: #10162f;
+    margin: 1em;
+    border-left: 4px solid #10162f;
+    border-bottom: 4px solid #10162f;
+    width: 40%;
+    padding: 0.5em;
+}
+
+
+/*
+    basic navigation buttons
+*/
+.navigation-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    height: 100%;
+    font-size: large;
+    font-weight: 1000;
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+}
+
+.navigation-button:hover {
+
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition: transform 0.1s ease-in-out;
+    -ms-transition: transform 0.1s ease-in-out;
+
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.navigation-button:active {
+    background-color: #ffea82;
+}

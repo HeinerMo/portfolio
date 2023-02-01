@@ -1,6 +1,6 @@
-.pitch {
-    margin-top: 1em;
-    width: 90%;
+.picture-container {
+    display: flex;
+    justify-content: left;
 }
 
 p {
@@ -10,9 +10,30 @@ p {
 .line {
     height: 3px;
     background-color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .profile {
-    width: 15%;
-    border-radius: 5px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 20%;
+}
+
+.technology {
+    margin: 1em;
+}
+
+.technology p {
+    text-align: left;
+    width: 100%;
+}
+
+.technology-logo {
+    margin: 1em;
+    width: 20%;    
+}
+
+.technology-text {
+    text-align: center;
 }
