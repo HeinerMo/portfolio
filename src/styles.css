@@ -37,6 +37,11 @@ body {
     justify-content: left;
 }
 
+.right-content {
+    display: flex;
+    justify-content: right;
+}
+
 .normal-text {
     color: #10162f;
 }
@@ -58,7 +63,7 @@ p, h1, h2, h3 {
     margin: 1em;
     border-left: 4px solid #10162f;
     border-bottom: 4px solid #10162f;
-    width: 40%;
+    width: fit-content;
     padding: 0.5em;
 }
 

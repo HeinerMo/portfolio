@@ -21,24 +21,33 @@ p {
     width: 20%;
 }
 
-
 .technology-logo {
-    margin: 1em;
-    width: 50%;
+    height: 3em;
+}
+
+.technology-text {
+    width: 100%;
+    text-align: center;
 }
 
 .logo-container {
     width: 100%;
+    padding: 1em;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+    gap: 2em;
+    justify-items: center;
+    justify-self: center;
 }
 
 .grid .item {
-    padding: 1em;
     width: 80%;
     height: 100%;
+    padding: 1em;
+}
+.title {
+    text-align: center;
 }
