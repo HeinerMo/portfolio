@@ -1,6 +1,7 @@
-.picture-container {
-    display: flex;
-    justify-content: left;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
 p {
@@ -20,20 +21,24 @@ p {
     width: 20%;
 }
 
-.technology {
-    margin: 1em;
-}
-
-.technology p {
-    text-align: left;
-    width: 100%;
-}
 
 .technology-logo {
     margin: 1em;
-    width: 20%;    
+    width: 50%;
 }
 
-.technology-text {
-    text-align: center;
+.logo-container {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.grid .item {
+    padding: 1em;
+    width: 80%;
+    height: 100%;
 }

@@ -23,66 +23,19 @@
             <h3>What I do</h3>
         </div>
     </div>
-    <div class="row">
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="/assets/img/android_logo.png" alt="Android Logo">
-            </div>
-            <p class="center-content">Android Development with Android Studio and Java.</p>
-        </div>
-
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="/assets/img/java_logo.png" alt="Java Logo">
-            </div>
-            <p class="center-content">Java Standalone Applications.</p>
-        </div>
-
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="/assets/img/sql_server_logo.png" alt="SQL Server Logo">
-            </div>
-            <p class="center-content">SQL Server: Database Design and SQL Programming.</p>
-        </div>
-
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="" alt="Logo">
-            </div>
-            <p class="center-content">Python</p>
-        </div>
-    </div>
 
     <div class="row">
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="" alt="Logo">
+        <div class="grid" >
+            <div class="item outlined shadowed-small" *ngFor="let tech of this.technologies">
+                <div class="logo-container center-content">
+                    <img class="technology-logo" src="{{tech.logoPath}}">
+                </div>
+                <div class="text-container center-content">
+                    <p class="technology-text center-content">{{tech.text}}</p>
+                </div>
             </div>
-            <p class="center-content">Angular</p>
-        </div>
-
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="" alt="Logo">
-            </div>
-            <p class="center-content">Linux</p>
-        </div>
-
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="" alt="Logo">
-            </div>
-            <p class="center-content">Arduino</p>
-        </div>
-
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="" alt="Logo">
-            </div>
-            <p class="center-content">Verilog</p>
         </div>
     </div>
-
     <div class="row">
         <div class="col">
             <div class="line"></div>
@@ -90,34 +43,10 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="" alt="Logo">
-            </div>
-            <p class="center-content">Kotlin</p>
-        </div>
 
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="" alt="Logo">
-            </div>
-            <p class="center-content">Spring</p>
-        </div>
-
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="" alt="Logo">
-            </div>
-            <p class="center-content">Django</p>
-        </div>
-
-        <div class="col outlined technology shadowed-small">
-            <div class="center-content">
-                <img class="technology-logo" src="" alt="Logo">
-            </div>
-            <p class="center-content">Verilog</p>
-        </div>
+    <div *ngFor="let tech of this.learning">
+        <p>{{tech.text}}</p>
+        <img src="{{tech.logoPath}}">
     </div>
 
 </div>
