@@ -6,35 +6,24 @@
         </div>
     </div>
 
-    <div class="row row-margin">
-        <div class="col project-container outlined shadowed-small navigation-button">
-            <div class="left-content">
-                <div class="project-thumbnail-container">
-                    <img class="project-thumbnail outlined" src="/assets/img/me.png" alt="image">
-                </div>
-                <div class="project-text">
-                    <p>
-                        Hello world in Turbo-Pascal.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum alias similique vitae asperiores voluptatem in aliquid ab quidem perferendis, id sunt, nam ipsam veniam. Praesentium saepe et consequatur quas.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col project-container outlined shadowed-small navigation-button">
-            <div class="left-content">
-                <div class="project-thumbnail-container">
-                    <img class="project-thumbnail outlined" src="/assets/img/me.png" alt="image">
-                </div>
-                <div class="project-text">
-                    <p>
-                        Hello world in Turbo-Pascal.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum alias similique vitae asperiores voluptatem in aliquid ab quidem perferendis, id sunt, nam ipsam veniam. Praesentium saepe et consequatur quas.
-                    </p>
+    <div class="row" *ngFor="let project of this.projects">
+        <a href="{{project.repositoryUrl}}" target="_blank">
+            <div class="col project-container outlined shadowed-small navigation-button left-content">
+                    <div class="project-thumbnail-container">
+                        <img class="project-thumbnail outlined" src="{{project.icon}}" alt="image">
+                    </div>
+                    <div class="project-info">
+                        <h3>
+                            {{project.name}}
+                        </h3>
+                        <div class="project-description">
+                            <p>
+                                {{project.description}}
+                            </p>
+                        </div>
                 </div>
             </div>
-        </div>
+        </a>
     </div>
 
 </div>

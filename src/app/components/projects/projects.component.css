@@ -2,10 +2,6 @@
     padding: 1em;
 }
 
-.row-margin {
-    margin-top: 1em;
-}
-
 .project-thumbnail-container {
     width: 30%;
 }
@@ -14,8 +10,43 @@
     width: 100%;
 }
 
-.project-text {
+.project-description {
     margin: 1em;
-    width: 70%;
-    font-size: medium;
+}
+
+a {
+    all:unset;
+    width: 100%;
+}
+
+.project-info {
+    width: 100%;
+    margin: 1em;
+}
+
+/*
+    basic navigation buttons
+*/
+.navigation-button {
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+}
+
+.navigation-button:hover {
+
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition: transform 0.1s ease-in-out;
+    -ms-transition: transform 0.1s ease-in-out;
+
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.navigation-button:active {
+    background-color: #ffea82;
 }
