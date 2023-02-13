@@ -54,6 +54,10 @@ p, h1, h2, h3 {
     color: #10162f;
 }
 
+p {
+    font-size: large;
+}
+
 /*
     Subtitles appear under and to the left of the navbar, representing the name of
     any given subcategory.
@@ -65,39 +69,4 @@ p, h1, h2, h3 {
     border-bottom: 4px solid #10162f;
     width: fit-content;
     padding: 0.5em;
-}
-
-
-/*
-    basic navigation buttons
-*/
-.navigation-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    height: 100%;
-    font-size: large;
-    font-weight: 1000;
-    -webkit-transition: transform 0.1s ease-in-out;
-    -moz-transition: transform 0.1s ease-in-out;
-    transition: transform 0.1s ease-in-out;
-}
-
-.navigation-button:hover {
-
-    -webkit-transition: transform 0.1s ease-in-out;
-    -moz-transition: transform 0.1s ease-in-out;
-    -ms-transition: transform 0.1s ease-in-out;
-
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.navigation-button:active {
-    background-color: #ffea82;
 }
