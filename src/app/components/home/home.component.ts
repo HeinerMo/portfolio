@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Technology } from 'src/app/models/Technology';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +9,11 @@ import { Technology } from 'src/app/models/Technology';
 })
 export class HomeComponent implements OnInit {
 
-  technologies : Technology[] = [];
-  learning : Technology[] = [];
+  technologies : Technology[] = []
+  learning : Technology[] = []
+  isPhone : boolean = false
   
-  constructor() { 
+  constructor(private breakpointObserver: BreakpointObserver) { 
     this.technologies.push(new Technology({text: "Android Development with Android Studio.", logoPath:"assets/img/android_logo.png"}))
     this.technologies.push(new Technology({text: "Java Standalone Applications.", logoPath:"assets/img/java_logo.png"}))
     this.technologies.push(new Technology({text: "Python Scripting to interact with Arduino Boards.", logoPath:"assets/img/python_logo.png"}))
@@ -23,6 +25,11 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.breakpointObserver.observe(Breakpoints.Small).subscribe(result => {
+      if (result.matches) {
+        console.log('hello mf')
+      }
+    })
   }
 
 }
