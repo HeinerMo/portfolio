@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="page-container shadowed outlined" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
     <app-navbar></app-navbar>
     <div class="row">
         <div class="col">
@@ -12,12 +12,9 @@
                 bachelors degree in Business Oriented Computer Science. I enjoy working with code, hardware and the
                 process of problem solving.
                 <br>
-                I can work with tight deadlines and under pressure. I feel comfortable working under Linux or Windows,
-                but I do have a preference towards Linux, mostly because is lighter and the terminal makes things faster.
-                <br>
-                As part of my university career courses I have used many technologies such as:
+                As part of my university career I have used many technologies such as:
                 </p>
-                <ul>
+                <ul class="basic-list" [ngClass]="{'basic-list-handset': handsetData.isHandset()}">
                     <li>Verilog for FPGA Programming</li>
                     <li>JavaScript</li>
                     <li>PHP</li>

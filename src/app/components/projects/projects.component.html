@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="page-container shadowed outlined" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
     <app-navbar></app-navbar>
     <div class="row">
         <div class="col">
@@ -6,9 +6,11 @@
         </div>
     </div>
 
-    <div class="row" *ngFor="let project of this.projects">
-        <a href="{{project.repositoryUrl}}" target="_blank">
-            <div class="col project-container outlined shadowed-small navigation-button left-content">
+
+    <div *ngIf="!handsetData.isHandset()">
+        <div class="row" *ngFor="let project of this.projects">
+            <a href="{{project.repositoryUrl}}" target="_blank">
+                <div class="col project-container outlined shadowed-small navigation-button left-content">
                     <div class="project-thumbnail-container">
                         <img class="project-thumbnail outlined" src="{{project.icon}}" alt="image">
                     </div>
@@ -21,9 +23,32 @@
                                 {{project.description}}
                             </p>
                         </div>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
+    </div>
+
+    <div *ngIf="handsetData.isHandset()">
+        <div class="row" *ngFor="let project of this.projects">
+            <a href="{{project.repositoryUrl}}" target="_blank">
+                <div class="col project-container-handset outlined shadowed-small">
+                    <div class="project-thumbnail-container-handset">
+                        <img class="project-thumbnail-handset outlined" src="{{project.icon}}" alt="image">
+                    </div>
+                    <div class="project-info">
+                        <h3>
+                            {{project.name}}
+                        </h3>
+                        <div class="project-description">
+                            <p>
+                                {{project.description}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
 </div>

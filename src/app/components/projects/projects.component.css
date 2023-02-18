@@ -1,9 +1,12 @@
 .project-container {
     padding: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 2em;
 }
 
 .project-thumbnail-container {
-    width: 30%;
+    width: 20%;
 }
 
 .project-thumbnail {
@@ -49,4 +52,26 @@ a {
 
 .navigation-button:active {
     background-color: #ffea82;
+}
+
+/*
+    CSS for handset
+*/
+
+.project-container-handset {
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.project-thumbnail-container-handset {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.project-thumbnail-handset {
+    width: 100%;
+    margin: 0 auto;
 }

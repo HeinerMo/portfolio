@@ -1,18 +1,22 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 html {
-    height: fit-content;
+    background-color: #fefae5;
+    padding-bottom: 5em;
     display: flex;
     justify-content: center;
 }
 
-body {
-    background: #fefae5; 
-    padding: 4em;
-    padding-top: 0em;
-    margin: 3em;
-    min-height: fit-content;
+.page-container {
     width: 80%;
+    padding: 1em;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+body {
+    background-color: #fefae5;
+    width: 100%;
 }
 
 .shadowed {
@@ -69,4 +73,14 @@ p {
     border-bottom: 4px solid #10162f;
     width: fit-content;
     padding: 0.5em;
+}
+
+/*
+    CSS for handset
+*/
+
+.page-container-handset {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 1em;
 }

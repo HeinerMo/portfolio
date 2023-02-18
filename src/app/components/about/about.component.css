@@ -1,7 +1,21 @@
-ul {
-    flex-wrap: wrap;
-    display: flex;
-  }
-  ul li {
-    flex: 1 0 33%;
-  }
+.basic-list {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.basic-list li {
+  flex: 1 0 33%;
+}
+
+/*
+  CSS for handset
+*/
+
+.basic-list-handset {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.basic-list-handset li {
+  flex: 1 0 100%;
+}
