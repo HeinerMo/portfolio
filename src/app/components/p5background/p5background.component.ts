@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { hide } from '@popperjs/core';
 import * as p5 from 'p5';
+import { Ball } from 'src/app/models/Ball';
 
 @Component({
   selector: 'app-p5background',
@@ -7,16 +9,14 @@ import * as p5 from 'p5';
   styleUrls: ['./p5background.component.css']
 })
 export class P5backgroundComponent implements OnInit {
-  
-  private p5Instance : any;
-  
 
-  constructor() { 
+  private p5Instance: any;
 
+  constructor() {
   }
 
   ngOnInit(): void {
-      this.createCanvas();
+    this.createCanvas();
   }
 
   private createCanvas() {
@@ -24,34 +24,48 @@ export class P5backgroundComponent implements OnInit {
   }
 
   private sketch(p: any) {
-    var angulo = 3;
-    var xpos  = 0;
-    var ypos = 0; 
-    var velAngular = 0.0;
-    var aceleracion = 0.0;
-    var longitud = 150;
 
+    var balls: Ball[] = [];
+
+    var amount = 10;
+    var passDistance = 350;
+    var r = 40;
     p.setup = () => {
       const canvas = p.createCanvas(p.windowWidth, p.windowHeight).parent('p5-canvas');
       canvas.position(0, 0);
+      for (var i = 0; i < amount; i++) {
+        balls.push(new Ball(p.random(0, p.width), p.random(0, p.height)))
+      }
     };
 
     p.draw = () => {
-      p.translate(p.width / 2, p.height / 2);
-      p.background(40, 40, 100);
-      p.fill(255);  
-      p.stroke(255);  
+      p.resizeCanvas(p.windowWidth, p.windowHeight)
+      p.background(80, 80, 150);
+      p.fill(117, 117, 209);
+      p.stroke(117, 117, 209);
+      p.strokeWeight(4);
       p.ellipseMode(p.CENTER);
-      xpos = p.sin(angulo) * longitud;
-      ypos = p.cos(angulo) * longitud;
-      p.ellipse(xpos, ypos, 20, 20);
-      p.line(0, 0, xpos, ypos);
-      
-      aceleracion = p.sin(angulo) * -0.01;
-      
-      angulo += velAngular;
-      velAngular += aceleracion;
-      velAngular *= 0.990;
+      for (var i = 0; i < amount; i++) {
+        balls[i].move(0.0015, p);
+      }
+      for (var i = 0; i < amount; i++) {
+        p.ellipse(balls[i].x, balls[i].y, r, r);
+        for (var j = i + 1; j < amount; j++) {
+          if (j < amount) {
+            //Chech other balls
+            if ((p.dist(balls[i].x, balls[i].y, balls[j].x, balls[j].y)) < passDistance) {
+              p.line(balls[i].x, balls[i].y, balls[j].x, balls[j].y)
+            }
+          }
+        }
+
+        //check mouse
+        if ((p.dist(balls[i].x, balls[i].y, p.mouseX, p.mouseY)) < passDistance) {
+          p.line(balls[i].x, balls[i].y, p.mouseX, p.mouseY)
+        }
+      }
+
+      p.ellipse(p.mouseX, p.mouseY, 40, 40);
     };
   }
 }

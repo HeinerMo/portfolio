@@ -1,7 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-html {
-    background-color: transparent;
+html { 
+    background-color: rgb(80, 80, 150);
     padding-bottom: 5em;
     display: flex;
     justify-content: center;
