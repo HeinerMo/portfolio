@@ -18,4 +18,8 @@ export class Ball {
         this.noiseX += step;
         this.noiseY += step;
     }
+
+    public seek(x : number, y : number) {
+        //TODO seeking behavior
+    }
 }
