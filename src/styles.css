@@ -47,7 +47,7 @@ body {
 }
 
 .normal-text {
-    color: #10162f;
+    color: #c6cef0;
 }
 
 .default-radius {
@@ -55,7 +55,7 @@ body {
 }
 
 p, h1, h2, h3 {
-    color: #10162f;
+    color: #c6cef0;
 }
 
 p {
@@ -67,7 +67,7 @@ p {
     any given subcategory.
 */
 .subtitle {
-    color: #10162f;
+    color: #c6cef0;
     margin: 1em;
     border-left: 4px solid #10162f;
     border-bottom: 4px solid #10162f;
@@ -78,7 +78,6 @@ p {
 /*
     CSS for handset
 */
-
 .page-container-handset {
     width: 95%;
     margin: 0 auto;
