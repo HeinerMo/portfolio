@@ -17,14 +17,14 @@ export class HomeComponent implements OnInit {
   handsetData: HandsetData = HandsetData.getInstance()
   
   constructor() { 
-    this.technologies.push(new Technology({text: "Android Development with Android Studio.", logoPath:"assets/img/android_logo.png"}))
-    this.technologies.push(new Technology({text: "Java Standalone Applications.", logoPath:"assets/img/java_logo.png"}))
-    this.technologies.push(new Technology({text: "Python Scripting to interact with Arduino Boards.", logoPath:"assets/img/python_logo.png"}))
-    this.technologies.push(new Technology({text: "Angular Frontend Development.", logoPath:"assets/img/angular_logo.png"}))
-    this.technologies.push(new Technology({text: "Bash Command Line Interface.", logoPath:"assets/img/bash_logo.png"}))
-    this.technologies.push(new Technology({text: "Arduino Prototyping and Automation.", logoPath:"assets/img/arduino_logo.png"}))
+    this.technologies.push(new Technology({text: "Android", logoPath:"assets/img/android_logo.png"}))
+    this.technologies.push(new Technology({text: "Java", logoPath:"assets/img/java_logo.png"}))
+    this.technologies.push(new Technology({text: "Python", logoPath:"assets/img/python_logo.png"}))
+    this.technologies.push(new Technology({text: "Angular", logoPath:"assets/img/angular_logo.png"}))
+    this.technologies.push(new Technology({text: "Bash", logoPath:"assets/img/bash_logo.png"}))
+    this.technologies.push(new Technology({text: "Arduino", logoPath:"assets/img/arduino_logo.png"}))
 
-    this.learning.push(new Technology({text: "Kotlin for Android Development.", logoPath:"assets/img/kotlin_logo.png"}))
+    this.learning.push(new Technology({text: "Kotlin", logoPath:"assets/img/kotlin_logo.png"}))
   }
 
   ngOnInit(): void {

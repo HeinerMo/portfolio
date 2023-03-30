@@ -9,40 +9,69 @@
     <div class="row">
         <div class="col">
             <div class="picture-container center-content">
-                <img class="profile outlined shadowed-small" [ngClass]="{'profile-handset': handsetData.isHandset()}" src="assets/img/me.png" alt="image">
+                <img class="profile outlined shadowed-small" [ngClass]="{'profile-handset': handsetData.isHandset()}"
+                    src="assets/img/me.png" alt="image">
             </div>
-            <h3 class="title">Junior Software Engineer</h3>
+            <h3 class="title">Software Engineer</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h1 class="subtitle">About me</h1>
         </div>
     </div>
     <div class="row">
         <div class="col">
+            <p class="about-me">I'm a Software Engineer currently studying at <a href="https://www.ucr.ac.cr/" target="_blank">University
+                of Costa Rica</a> getting a bachelors degree in Business Oriented Computer Science. I enjoy working with code, hardware and the
+                process of problem solving.
+                <br>
+                As part of my university career I have used many technologies such as:
+            </p>
+            <ul class="basic-list normal-text" [ngClass]="{'basic-list-handset': handsetData.isHandset()}">
+                <li>Verilog for FPGA Programming</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Angular</li>
+                <li>Bash</li>
+                <li>Cisco Networking Essentials</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Arduino</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h1 class="subtitle">Certifications</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <ul class="normal-text" [ngClass]="{'basic-list-handset': handsetData.isHandset()}">
+                <li>Scrum Fundamentals.</li>
+                <li>English- Level: C1 BELT English, Idioma Internacional, March 2023.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
             <div class="line"></div>
-            <h3>What I do</h3>
+            <h3>What I know</h3>
         </div>
     </div>
 
     <div class="row">
         <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
             <div class="item outlined shadowed-small" *ngFor="let tech of this.technologies">
-                <div class="logo-container center-content">
-                    <img class="technology-logo" src="{{tech.logoPath}}">
-                </div>
-                <div class="text-container center-content">
-                    <p class="technology-text center-content">{{tech.text}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="line"></div>
-            <h3>What I'm learning</h3>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
-            <div class="item outlined shadowed-small" *ngFor="let tech of this.learning">
                 <div class="logo-container center-content">
                     <img class="technology-logo" src="{{tech.logoPath}}">
                 </div>
