@@ -1,14 +1,21 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 html { 
-    background-color: rgb(80, 80, 150);
-    padding-bottom: 5em;
+    background-color: rgb(20, 20, 20);
     display: flex;
     justify-content: center;
 }
 
+a {
+    color: rgb(240, 156, 0);
+}
+
+a:hover {
+    color: rgb(236, 231, 220);
+}
+
 .page-container {
-    width: 80%;
+    width: 90%;
     padding: 1em;
     margin: 0 auto;
     margin-top: 1em;
@@ -19,21 +26,14 @@ body {
     width: 100%;
 }
 
-.shadowed {
-    box-shadow: -2em 2em #10162f;
-}
-
-.shadowed-small {
-    box-shadow: -0.5em 0.5em #10162f;
-}
-
-.outlined {
-    border: 2px solid #10162f;
-}
-
 .center-content {
     display: flex;
     justify-content: center;
+}
+
+.centered-vertically {
+    display: flex;
+    align-items: center;
 }
 
 .left-content {
@@ -47,7 +47,8 @@ body {
 }
 
 .normal-text {
-    color: #c6cef0;
+    color: #ffffff;
+    font-size: 14pt;
 }
 
 .default-radius {
@@ -55,11 +56,7 @@ body {
 }
 
 p, h1, h2, h3 {
-    color: #c6cef0;
-}
-
-p {
-    font-size: large;
+    color: #ffffff;
 }
 
 /*
@@ -67,12 +64,10 @@ p {
     any given subcategory.
 */
 .subtitle {
-    color: #c6cef0;
-    margin: 1em;
-    border-left: 4px solid #10162f;
-    border-bottom: 4px solid #10162f;
+    color: #ffffff;
     width: fit-content;
     padding: 0.5em;
+    font-size: 40pt;
 }
 
 /*

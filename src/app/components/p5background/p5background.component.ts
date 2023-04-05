@@ -55,9 +55,9 @@ export class P5backgroundComponent implements OnInit, OnDestroy {
 
     p.draw = () => {
       p.resizeCanvas(p.windowWidth, p.windowHeight)
-      p.background(80, 80, 150);
-      p.fill(97, 97, 171);
-      p.stroke(97, 97, 171);
+      p.background(20);
+      p.fill(50);
+      p.stroke(50);
       p.strokeWeight(4);
       p.ellipseMode(p.CENTER);
       for (var i = 0; i < amount; i++) {

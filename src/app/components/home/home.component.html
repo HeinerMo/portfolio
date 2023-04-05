@@ -1,17 +1,17 @@
-<div class="page-container shadowed outlined" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
+<div class="page-container" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
     <app-navbar></app-navbar>
     <div class="row">
-        <div class="col">
-            <h1 class="subtitle">Heiner Monge L.</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="picture-container center-content">
-                <img class="profile outlined shadowed-small" [ngClass]="{'profile-handset': handsetData.isHandset()}"
-                    src="assets/img/me.png" alt="image">
+        <div class="col centered-vertically">
+            <div class="name-holder">
+                <div>
+                    <h1 class="name">Heiner Monge L.</h1>
+                    <h3>Software Engineer</h3>
+                </div>
             </div>
-            <h3 class="title">Software Engineer</h3>
+        </div>
+        <div class="col">
+            <img class="profile" [ngClass]="{'profile-handset': handsetData.isHandset()}" src="assets/img/me.png"
+                alt="image">
         </div>
     </div>
 
@@ -22,8 +22,9 @@
     </div>
     <div class="row">
         <div class="col">
-            <p class="about-me">I'm a Software Engineer currently studying at <a href="https://www.ucr.ac.cr/" target="_blank">University
-                of Costa Rica</a> getting a bachelors degree in Business Oriented Computer Science. I enjoy working with code, hardware and the
+            <p class="text-indent normal-text">I'm a Software Engineer currently studying at <a href="https://www.ucr.ac.cr/"
+                    target="_blank">Universidad de Costa Rica</a> getting a bachelors degree in Business Oriented Computer Science. I enjoy working
+                with code, hardware and the
                 process of problem solving.
                 <br>
                 As part of my university career I have used many technologies such as:
@@ -64,17 +65,17 @@
     <div class="row">
         <div class="col">
             <div class="line"></div>
-            <h3>What I know</h3>
+            <h1 class="subtitle">What I Know</h1>
         </div>
     </div>
 
     <div class="row">
         <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
-            <div class="item outlined shadowed-small" *ngFor="let tech of this.technologies">
+            <div class="item" *ngFor="let tech of this.technologies">
                 <div class="logo-container center-content">
                     <img class="technology-logo" src="{{tech.logoPath}}">
                 </div>
-                <div class="text-container center-content">
+                <div class="text-container center-content normal-text">
                     <p class="technology-text center-content">{{tech.text}}</p>
                 </div>
             </div>
