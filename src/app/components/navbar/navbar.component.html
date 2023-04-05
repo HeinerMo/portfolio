@@ -1,24 +1,24 @@
-<nav class="nav-container">
-    <div *ngIf="!handsetData.isHandset()">
-        <ul class="nav-Ul">
-            <li class="navigation-button normal-text" routerLink="/app-home" routerLinkActive="active"
-                ariaCurrentWhenActive="page">Home</li>
-            <li class="navigation-button normal-text" routerLink="/app-projects" routerLinkActive="active"
-                ariaCurrentWhenActive="page">Projects</li>
-            <li class="navigation-button normal-text" routerLink="/app-contact" routerLinkActive="active"
-                ariaCurrentWhenActive="page">Contact</li>
-        </ul>
-    </div>
+<mat-toolbar *ngIf="!handsetData.isHandset()" class="navbar">
+    <li class="navigation-button normal-text" routerLink="/app-home" routerLinkActive="active"
+        ariaCurrentWhenActive="page">Home</li>
+    <li class="navigation-button normal-text" routerLink="/app-projects" routerLinkActive="active"
+        ariaCurrentWhenActive="page">Projects</li>
+    <li class="navigation-button normal-text" routerLink="/app-contact" routerLinkActive="active"
+        ariaCurrentWhenActive="page">Contact</li>
+</mat-toolbar>
 
+<div *ngIf="handsetData.isHandset()">
+    <mat-toolbar>
+        Responsive side navigation
+    </mat-toolbar>
 
-
-    <label *ngIf="handsetData.isHandset()">
-        <input type="checkbox">
-        <span class="menu"> <span class="hamburger"></span> </span>
-        <ul>
-            <li class="normal-text"><a routerLink="/app-home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-            <li class="normal-text"><a routerLink="/app-projects" routerLinkActive="active" ariaCurrentWhenActive="page">Projects</a></li>
-            <li class="normal-text"><a routerLink="/app-contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a></li>
-        </ul>
-    </label>
-</nav>
+    <mat-sidenav-container>
+        <mat-sidenav class="mat-elevation-z8">
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="content mat-elevation-z8">
+                Main content here!
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
