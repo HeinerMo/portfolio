@@ -31,27 +31,15 @@ a {
     basic navigation buttons
 */
 .navigation-button {
-    -webkit-transition: transform 0.1s ease-in-out;
-    -moz-transition: transform 0.1s ease-in-out;
-    transition: transform 0.1s ease-in-out;
+    border-radius: 1em;
 }
 
 .navigation-button:hover {
-
-    -webkit-transition: transform 0.1s ease-in-out;
-    -moz-transition: transform 0.1s ease-in-out;
-    -ms-transition: transform 0.1s ease-in-out;
-
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    background-color: rgba(255, 255, 255,0.2);
 }
 
 .navigation-button:active {
-    background-color: #ffea82;
+    background-color: rgba(255, 255, 255,0.4);
 }
 
 /*

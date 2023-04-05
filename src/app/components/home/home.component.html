@@ -1,6 +1,7 @@
 <div class="page-container" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
     <app-navbar></app-navbar>
-    <div class="row">
+    
+    <div [ngClass]="{'row main-info-handset': handsetData.isHandset(), 'row': !handsetData.isHandset()}">
         <div class="col centered-vertically">
             <div class="name-holder">
                 <div>
@@ -22,8 +23,9 @@
     </div>
     <div class="row">
         <div class="col">
-            <p class="text-indent normal-text">I'm a Software Engineer currently studying at <a href="https://www.ucr.ac.cr/"
-                    target="_blank">Universidad de Costa Rica</a> getting a bachelors degree in Business Oriented Computer Science. I enjoy working
+            <p class="text-indent normal-text">I'm a Software Engineer currently studying at <a
+                    href="https://www.ucr.ac.cr/" target="_blank">Universidad de Costa Rica</a> getting a bachelors
+                degree in Business Oriented Computer Science. I enjoy working
                 with code, hardware and the
                 process of problem solving.
                 <br>
@@ -70,7 +72,6 @@
 
     <div class="row">
         <div class="col">
-            <div class="line"></div>
             <h1 class="subtitle">What I Know</h1>
         </div>
     </div>

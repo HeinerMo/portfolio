@@ -1,24 +1,24 @@
 <nav class="nav-container">
     <div *ngIf="!handsetData.isHandset()">
         <ul class="nav-Ul">
-            <li class="navigation-button normal-text" routerLink="/app-home"
-                routerLinkActive="active" ariaCurrentWhenActive="page">Home</li>
-            <li class="navigation-button normal-text" routerLink="/app-projects"
-                routerLinkActive="active" ariaCurrentWhenActive="page">Projects</li>
-            <li class="navigation-button normal-text" routerLink="/app-contact"
-                routerLinkActive="active" ariaCurrentWhenActive="page">Contact</li>
+            <li class="navigation-button normal-text" routerLink="/app-home" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Home</li>
+            <li class="navigation-button normal-text" routerLink="/app-projects" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Projects</li>
+            <li class="navigation-button normal-text" routerLink="/app-contact" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Contact</li>
         </ul>
     </div>
 
 
-    <div *ngIf="handsetData.isHandset()">
-        <ul class="nav-Ul-handset">
-            <li class="nav-button-handset outlined shadowed-small normal-text" routerLink="/app-home"
-                routerLinkActive="active" ariaCurrentWhenActive="page">Home</li>
-            <li class="nav-button-handset outlined shadowed-small normal-text" routerLink="/app-projects"
-                routerLinkActive="active" ariaCurrentWhenActive="page">Projects</li>
-            <li class="nav-button-handset outlined shadowed-small normal-text" routerLink="/app-contact"
-                routerLinkActive="active" ariaCurrentWhenActive="page">Contact</li>
+
+    <label *ngIf="handsetData.isHandset()">
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+            <li class="normal-text"><a routerLink="/app-home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+            <li class="normal-text"><a routerLink="/app-projects" routerLinkActive="active" ariaCurrentWhenActive="page">Projects</a></li>
+            <li class="normal-text"><a routerLink="/app-contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a></li>
         </ul>
-    </div>
+    </label>
 </nav>
