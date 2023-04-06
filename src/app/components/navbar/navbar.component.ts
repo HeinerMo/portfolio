@@ -10,16 +10,22 @@ import { HandsetData } from 'src/app/models/HandsetData';
 export class NavbarComponent implements OnInit {
 
   handsetData: HandsetData = HandsetData.getInstance()
+  
+  collapsed : boolean = true;
 
   constructor(private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
-    this.breakpointObserver.observe(Breakpoints.Handset).subscribe(result => {
+    this.breakpointObserver.observe(Breakpoints.Handset).subscribe((result: any) => {
       this.handsetData.setHandset(false)
       if (result.matches) {
         this.handsetData.setHandset(true)
       }
     })
+  }
+
+  public toggle() {
+    this.collapsed = !this.collapsed;
   }
 
 }

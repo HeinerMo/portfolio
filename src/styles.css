@@ -24,6 +24,7 @@ a:hover {
 body {
     background-color: transparent;
     width: 100%;
+    margin-bottom: 2em;
 }
 
 .center-content {

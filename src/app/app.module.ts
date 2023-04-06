@@ -9,6 +9,11 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { P5backgroundComponent } from './components/p5background/p5background.component';
+import { MatToolbarModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material/sidenav'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import {MatIconModule} from '@angular/material/icon'; 
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { P5backgroundComponent } from './components/p5background/p5background.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

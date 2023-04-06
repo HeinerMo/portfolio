@@ -7,18 +7,20 @@
         ariaCurrentWhenActive="page">Contact</li>
 </mat-toolbar>
 
-<div *ngIf="handsetData.isHandset()">
-    <mat-toolbar>
-        Responsive side navigation
-    </mat-toolbar>
 
-    <mat-sidenav-container>
-        <mat-sidenav class="mat-elevation-z8">
-        </mat-sidenav>
-        <mat-sidenav-content>
-            <div class="content mat-elevation-z8">
-                Main content here!
-            </div>
-        </mat-sidenav-content>
-    </mat-sidenav-container>
+<div class="nav-handset-container" *ngIf="handsetData.isHandset()">
+    <div class="nav-expand-buttom">
+        <a class="nav-toggle-container"><mat-icon (click)="this.toggle()" [ngClass]="'nav-toggle'">menu</mat-icon></a>
+    </div>
+    <div (click)="this.toggle()" class="nav-menu" [ngClass]="{'nav-menu-enabled': !this.collapsed}">
+        <div class="nav-items">
+            <li class="navigation-button-handset normal-text" routerLink="/app-home" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Home</li>
+            <li class="navigation-button-handset normal-text" routerLink="/app-projects" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Projects</li>
+            <li class="navigation-button-handset normal-text" routerLink="/app-contact" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Contact</li>
+        </div>
+    </div>
+    <div class="backdrop" [ngClass]="{'backdrop-enabled': !this.collapsed}"></div>
 </div>
