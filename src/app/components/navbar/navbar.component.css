@@ -44,12 +44,12 @@ a {
     CSS for handset
 */
 .nav-handset-container {
-    position: sticky;
-    top: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .nav-menu {
-    transition: left 1s;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -60,11 +60,12 @@ a {
     left: -100%;
     bottom: 0%;
     width: 100%;
+    transition: left 0.5s ease-in-out;
 }
 
 .nav-menu-enabled {
     left: 0%;
-    transition: left 1s;
+    transition: left 0.5s ease-in-out;
 }
 
 .nav-items {
@@ -78,9 +79,13 @@ a {
 }
 
 .nav-toggle {
-    transform: scale(1.5);
-    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    transform: scale(2.5);
+    background-color: rgb(80, 80, 80);
     color: white;
+    top: 2em;
+    left: 2em;
+    z-index: 3;
 }
 
 .navigation-button-handset {
@@ -101,7 +106,6 @@ a {
 }
 
 .backdrop {
-    opacity: 0;
     position: fixed;
     left: -100%;
     top: 0%;
@@ -109,13 +113,12 @@ a {
     bottom: 0%;
     width: 100%;
     backdrop-filter: blur(10px);
-    transition: opacity 1s left 0s;
     background-color: rgba(20, 20, 20, 0.5);
     z-index: -1;
+    transition: left 0.5s ease-in-out;
 }
 
 .backdrop-enabled {
-    opacity: 1;
     left: 0%;
-    transition: opacity 1s left 0s;
+    transition: left 0.5s ease-in-out;
 }
