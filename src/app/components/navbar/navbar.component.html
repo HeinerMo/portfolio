@@ -9,9 +9,7 @@
 
 
 <div class="nav-handset-container" *ngIf="handsetData.isHandset()">
-    <div class="nav-expand-buttom">
-        <a class="nav-toggle-container"><mat-icon (click)="this.toggle()" [ngClass]="'nav-toggle'">menu</mat-icon></a>
-    </div>
+    <a class="nav-toggle-container"><mat-icon (click)="this.toggle()" [ngClass]="'nav-toggle'">menu</mat-icon></a>
     <div (click)="this.toggle()" class="nav-menu" [ngClass]="{'nav-menu-enabled': !this.collapsed}">
         <div class="nav-items">
             <li class="navigation-button-handset normal-text" routerLink="/app-home" routerLinkActive="active"
