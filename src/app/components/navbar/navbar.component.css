@@ -53,12 +53,9 @@ a {
     position: fixed;
     display: flex;
     justify-content: center;
-    align-items: center;
     border-radius: 0%;
-    top: 10%;
-    right: 0%;
+    top: 20%;
     left: -100%;
-    bottom: 0%;
     width: 100%;
     transition: left 0.5s ease-in-out;
 }
@@ -70,35 +67,64 @@ a {
 
 .nav-items {
     display: block;
+    align-items: center;
 }
 
 .nav-toggle-container {
     display: flex;
-    justify-content: right;
     z-index: 1;
+    border-radius: 0%;
+    transition: border-radius 1s ease-in-out;
 }
 
 .nav-toggle {
-    position: absolute;
-    transform: scale(2.5);
-    background-color: rgb(80, 80, 80);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 1.5em;
+    top: 1.5em;
+    opacity: 1;
     color: white;
-    top: 2em;
-    left: 2em;
-    z-index: 3;
+    font-weight: 800;
+}
+
+.toggle-text-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgb(80, 80, 80);
+    opacity: 1;
+    width: 4em;
+    height: 4em;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.toggle-text-disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    width: 4em;
+    height: 4em;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .navigation-button-handset {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 10em;
     font-size: large;
     font-weight: 1000;
     padding: 1em;
     border-radius: 1em;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .navigation-button-handset:active {

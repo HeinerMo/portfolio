@@ -9,7 +9,21 @@
 
 
 <div class="nav-handset-container" *ngIf="handsetData.isHandset()">
-    <a class="nav-toggle-container"><mat-icon (click)="this.toggle()" [ngClass]="'nav-toggle'">menu</mat-icon></a>
+    <div>
+        
+        <div class="nav-toggle" (click)="this.toggle()">
+            <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': this.collapsed}">
+                Close
+            </div>
+        </div>
+        
+        <div class="nav-toggle" (click)="this.toggle()">
+            <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': !this.collapsed}">
+                Menu
+            </div>
+        </div>
+        
+    </div>
     <div (click)="this.toggle()" class="nav-menu" [ngClass]="{'nav-menu-enabled': !this.collapsed}">
         <div class="nav-items">
             <li class="navigation-button-handset normal-text" routerLink="/app-home" routerLinkActive="active"
