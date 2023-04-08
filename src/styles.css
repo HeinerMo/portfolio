@@ -76,6 +76,5 @@ p, h1, h2, h3 {
 */
 .page-container-handset {
     width: 95%;
-    margin: 0 auto;
-    margin-top: 1em;
+    margin-top: 4em;
 }
