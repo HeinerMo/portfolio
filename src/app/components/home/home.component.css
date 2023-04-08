@@ -9,17 +9,13 @@
     margin-bottom: 1em;
 }
 
-.profile {
-    width: 50%;
-}
-
 .name {
-    font-size: 40pt;
+    font-size: 7rem;
 }
 
 .name-holder {
-    display: flex;
-    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 6em;
     width: 100%;
 }
 
@@ -68,10 +64,6 @@
 /*
     CSS for handset
 */
-
-.profile-handset {
-    width: 100%;
-}
 
 .grid-handset {
     display: grid;

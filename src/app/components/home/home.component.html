@@ -1,18 +1,12 @@
 <div class="page-container" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
     <app-navbar></app-navbar>
-    
+
     <div [ngClass]="{'row main-info-handset': handsetData.isHandset(), 'row': !handsetData.isHandset()}">
-        <div class="col centered-vertically">
-            <div class="name-holder">
-                <div>
-                    <h1 class="name">Heiner Monge L.</h1>
-                    <h3>Software Engineer</h3>
-                </div>
+        <div class="col left-content name-holder">
+            <div>
+                <h1 class="name">Heiner Monge L.</h1>
+                <h3>Software Engineer</h3>
             </div>
-        </div>
-        <div class="col">
-            <img class="profile" [ngClass]="{'profile-handset': handsetData.isHandset()}" src="assets/img/me.png"
-                alt="image">
         </div>
     </div>
 
