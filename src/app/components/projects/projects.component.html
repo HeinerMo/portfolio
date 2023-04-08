@@ -1,4 +1,4 @@
-<div class="page-container shadowed outlined" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
+<div class="page-container" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
     <app-navbar></app-navbar>
     <div class="row">
         <div class="col">
@@ -10,9 +10,9 @@
     <div *ngIf="!handsetData.isHandset()">
         <div class="row" *ngFor="let project of this.projects">
             <a href="{{project.repositoryUrl}}" target="_blank">
-                <div class="col project-container outlined shadowed-small navigation-button left-content">
+                <div class="col project-container navigation-button left-content">
                     <div class="project-thumbnail-container">
-                        <img class="project-thumbnail outlined" src="{{project.icon}}" alt="image">
+                        <img class="project-thumbnail" src="{{project.icon}}" alt="image">
                     </div>
                     <div class="project-info">
                         <h3>
@@ -32,9 +32,9 @@
     <div *ngIf="handsetData.isHandset()">
         <div class="row" *ngFor="let project of this.projects">
             <a href="{{project.repositoryUrl}}" target="_blank">
-                <div class="col project-container-handset outlined shadowed-small">
+                <div class="col project-container-handset navigation-button">
                     <div class="project-thumbnail-container-handset">
-                        <img class="project-thumbnail-handset outlined" src="{{project.icon}}" alt="image">
+                        <img class="project-thumbnail-handset" src="{{project.icon}}" alt="image">
                     </div>
                     <div class="project-info">
                         <h3>

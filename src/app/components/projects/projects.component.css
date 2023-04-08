@@ -52,6 +52,7 @@ a {
     margin-right: 1em;
     margin-bottom: 1em;
     display: block;
+    background-color: rgba(255, 255, 255,0.05);
 }
 
 .project-thumbnail-container-handset {
