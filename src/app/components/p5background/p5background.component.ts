@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { hide } from '@popperjs/core';
 import * as p5 from 'p5';
 import { Ball } from 'src/app/models/Ball';
+import { HandsetData } from 'src/app/models/HandsetData';
 
 @Component({
   selector: 'app-p5background',
@@ -12,6 +13,7 @@ export class P5backgroundComponent implements OnInit, OnDestroy {
 
   private toggle = true;
   private p5! : p5;
+  handsetData: HandsetData = HandsetData.getInstance()
   constructor() {
     window.onresize = this.onWindowResize;
   }
