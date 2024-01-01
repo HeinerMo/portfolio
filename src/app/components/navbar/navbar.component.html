@@ -1,35 +1,39 @@
-<mat-toolbar *ngIf="!handsetData.isHandset()" class="navbar">
+<div *ngIf="!handsetData.isHandset()" class="navbar">
     <li class="navigation-button normal-text" routerLink="/app-home" routerLinkActive="active"
         ariaCurrentWhenActive="page">Home</li>
+    <li class="navigation-button normal-text" routerLink="/app-software" routerLinkActive="active"
+        ariaCurrentWhenActive="page">Software Engineering</li>
     <li class="navigation-button normal-text" routerLink="/app-projects" routerLinkActive="active"
-        ariaCurrentWhenActive="page">Projects</li>
+        ariaCurrentWhenActive="page">Software Projects</li>
     <li class="navigation-button normal-text" routerLink="/app-contact" routerLinkActive="active"
         ariaCurrentWhenActive="page">Contact</li>
-</mat-toolbar>
+</div>
 
 
 <div class="nav-handset-container" *ngIf="handsetData.isHandset()">
     <div>
-        
+
         <div class="nav-toggle" (click)="this.toggle()">
             <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': this.collapsed}">
                 Close
             </div>
         </div>
-        
+
         <div class="nav-toggle" (click)="this.toggle()">
             <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': !this.collapsed}">
                 Menu
             </div>
         </div>
-        
+
     </div>
     <div (click)="this.toggle()" class="nav-menu" [ngClass]="{'nav-menu-enabled': !this.collapsed}">
         <div class="nav-items">
             <li class="navigation-button-handset normal-text" routerLink="/app-home" routerLinkActive="active"
                 ariaCurrentWhenActive="page">Home</li>
+            <li class="navigation-button-handset normal-text" routerLink="/app-software" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Software Engineering</li>
             <li class="navigation-button-handset normal-text" routerLink="/app-projects" routerLinkActive="active"
-                ariaCurrentWhenActive="page">Projects</li>
+                ariaCurrentWhenActive="page">Software Projects</li>
             <li class="navigation-button-handset normal-text" routerLink="/app-contact" routerLinkActive="active"
                 ariaCurrentWhenActive="page">Contact</li>
         </div>

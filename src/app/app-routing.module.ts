@@ -1,10 +1,10 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { SoftwareComponent } from './components/software/software.component';
 
 const routes: Routes = [
   {
@@ -16,8 +16,8 @@ const routes: Routes = [
   }
   ,{ path: 'app-home', component: HomeComponent }
   ,{ path: 'app-projects', component: ProjectsComponent }
-  ,{ path: 'app-about', component: AboutComponent }
   ,{ path: 'app-contact', component: ContactComponent}
+  ,{ path: 'app-software', component: SoftwareComponent}
   ,{ path: '**', component: HomeComponent }
 ];
 

@@ -1,0 +1,58 @@
+<div class="page-container" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
+    <app-navbar></app-navbar>
+
+
+    <div class="page-content">
+        <div class="row">
+            <div class="col">
+                <h1 class="subtitle">I'm a Software Engineer!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-indent normal-text">
+                    Problem solving is my passion. Do you know the steps to solve a problem? Requirements, Analysis,
+                    Design, Construction, Testing, Implantation and Monitoring!
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1 class="subtitle">Certifications</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <ul class="normal-text" [ngClass]="{'basic-list-handset': handsetData.isHandset()}">
+                    <li><a href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-HeinerMongeLopez-953866.pdf"
+                            target="_blank">Scrum Fundamentals Certified.</a></li>
+                    <li><a href="assets/docs/belt.pdf" target="_blank">English- Level: C1 BELT English, Idioma
+                            Internacional, March 2023.</a></li>
+                    <li><a href="https://www.efset.org/cert/wDv4WF" target="_blank">EFSET English Certificate 82/100 (C2
+                            Proficient).</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1 class="subtitle">Technologies I have used</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
+                <div class="item" *ngFor="let tech of this.technologies">
+                    <div class="logo-container center-content">
+                        <img class="technology-logo" src="{{tech.logoPath}}">
+                    </div>
+                    <div class="text-container center-content normal-text">
+                        <p class="technology-text center-content">{{tech.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

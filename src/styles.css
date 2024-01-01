@@ -1,7 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 html { 
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
 }
@@ -11,20 +11,23 @@ a {
 }
 
 a:hover {
-    color: rgb(236, 231, 220);
+    color: rgb(56, 55, 53);
 }
 
 .page-container {
-    width: 90%;
-    padding: 1em;
-    margin: 0 auto;
+    display: flex;
+}
+
+.page-content {
+    flex: 1;
     margin-top: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 body {
     background-color: transparent;
     width: 100%;
-    margin-bottom: 2em;
 }
 
 .center-content {
@@ -48,7 +51,7 @@ body {
 }
 
 .normal-text {
-    color: #ffffff;
+    color: #000;
     font-size: 14pt;
 }
 
@@ -57,7 +60,7 @@ body {
 }
 
 p, h1, h2, h3 {
-    color: #ffffff;
+    color: #000;
 }
 
 /*
@@ -65,16 +68,40 @@ p, h1, h2, h3 {
     any given subcategory.
 */
 .subtitle {
-    color: #ffffff;
+    color: #000;
     width: fit-content;
     padding: 0.5em;
     font-size: 40pt;
 }
 
 /*
+    General Action Button
+*/
+.action-button {
+    all:unset;
+    display: flex;
+    font-size: large;
+    font-weight: 5000;
+    padding: 1em;;
+    background-color: #201C3B90;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.action-button:hover {
+    background-color: rgba(76, 71, 97);
+}
+
+.action-button:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*
     CSS for handset
 */
 .page-container-handset {
-    width: 95%;
+    width: 100%;
+    display: block;
     margin-top: 4em;
+    padding: 1em;
 }

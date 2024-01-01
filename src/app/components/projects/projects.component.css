@@ -1,45 +1,9 @@
+
 .project-container {
     padding: 1em;
     margin-left: 3em;
     margin-right: 3em;
     margin-bottom: 2em;
-}
-
-.project-thumbnail-container {
-    width: 10rem;
-}
-
-.project-thumbnail {
-    width: 100%;
-}
-
-.project-description {
-    margin: 1em;
-}
-
-a {
-    all:unset;
-    width: 100%;
-}
-
-.project-info {
-    width: 100%;
-    margin: 1em;
-}
-
-/*
-    basic navigation buttons
-*/
-.navigation-button {
-    border-radius: 1em;
-}
-
-.navigation-button:hover {
-    background-color: rgba(255, 255, 255,0.2);
-}
-
-.navigation-button:active {
-    background-color: rgba(255, 255, 255,0.4);
 }
 
 /*
@@ -52,15 +16,4 @@ a {
     margin-right: 1em;
     margin-bottom: 1em;
     display: block;
-    background-color: rgba(255, 255, 255,0.05);
-}
-
-.project-thumbnail-container-handset {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.project-thumbnail-handset {
-    width: 100%;
-    margin: 0 auto;
 }

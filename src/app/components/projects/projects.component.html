@@ -1,35 +1,35 @@
 <div class="page-container" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
     <app-navbar></app-navbar>
-    <div class="row">
-        <div class="col">
-            <h1 class="subtitle">Projects</h1>
+
+
+    <div class="page-content">
+        <div class="row">
+            <div class="col">
+                <h1 class="subtitle">Software Projects</h1>
+            </div>
         </div>
-    </div>
 
 
-    <div *ngIf="!handsetData.isHandset()">
-        <div class="row" *ngFor="let project of this.projects">
-            <a href="{{project.repositoryUrl}}" target="_blank">
-                <div class="col project-container navigation-button left-content">
+        <div *ngIf="!handsetData.isHandset()">
+            <div class="row" *ngFor="let project of this.projects">
+                <a href="{{project.repositoryUrl}}" target="_blank" class="action-button">
                     <div class="project-info">
                         <h3>
                             {{project.name}} <mat-icon>launch</mat-icon>
                         </h3>
                         <div class="project-description">
-                            <p class = "normal-text">
+                            <p class="normal-text">
                                 {{project.description}}
                             </p>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
-    </div>
 
-    <div *ngIf="handsetData.isHandset()">
-        <div class="row" *ngFor="let project of this.projects">
-            <a href="{{project.repositoryUrl}}" target="_blank">
-                <div class="col project-container-handset navigation-button">
+        <div *ngIf="handsetData.isHandset()">
+            <div class="row" *ngFor="let project of this.projects">
+                <a href="{{project.repositoryUrl}}" target="_blank" class="action-button">
                     <div class="project-info">
                         <h3>
                             {{project.name}} <mat-icon>launch</mat-icon>
@@ -40,9 +40,8 @@
                             </p>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
-
 </div>

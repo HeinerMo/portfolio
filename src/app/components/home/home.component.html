@@ -1,68 +1,28 @@
 <div class="page-container" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
     <app-navbar></app-navbar>
 
-    <div [ngClass]="{'row main-info-handset': handsetData.isHandset(), 'row': !handsetData.isHandset()}">
-        <div class="col left-content name-holder">
-            <div>
-                <h1 class="name">Heiner Monge L.</h1>
-                <h3>Software Engineer</h3>
+    <div class="page-content">
+        <div class="row">
+            <div class="col">
+                <h1 class="subtitle">Hello, I'm Heiner!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-indent normal-text">
+                    I'm a software engineer, photographer and generally a nerd. The only thing I love more than learning
+                    is learning by doing. This site contains some of the things I like. Feel free to look around!
+                </p>
+
+                <!--
+                <p class="text-indent normal-text">This are temporal notes: </p>
+                <p class="text-indent normal-text" style="background-color: #FFFFFF">#FFFFFF</p>
+                <p class="text-indent normal-text" style="background-color: #5952FF">#5952FF</p>
+                <p class="text-indent normal-text" style="background-color: #402AA4">#402AA4</p>
+                <p class="text-indent normal-text" style="background-color: #201C3B">#201C3B</p>
+                <p class="text-indent normal-text" style="background-color: #4C4761">#4C4761</p>
+                -->
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col">
-            <h1 class="subtitle">About me</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p class="text-indent normal-text">
-                As a software engineer, I am passionate about leveraging my technical skills to build intelligent
-                systems and manage projects effectively. I have experience in web and mobile applications, database
-                design and administration, and data warehousing. I'm a fast learner, critical thinker, and team player.
-                I believe that effective communication is key to success in any project, and I'm committed to delivering
-                high-quality work that meets the needs of my clients and exceeds their expectations.
-            </p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <h1 class="subtitle">Certifications</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <ul class="normal-text" [ngClass]="{'basic-list-handset': handsetData.isHandset()}">
-                <li><a href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-HeinerMongeLopez-953866.pdf"
-                        target="_blank">Scrum Fundamentals Certified.</a></li>
-                <li><a href="assets/docs/belt.pdf" target="_blank">English- Level: C1 BELT English, Idioma
-                        Internacional, March 2023.</a></li>
-                <li><a href="https://www.efset.org/cert/wDv4WF" target="_blank">EFSET English Certificate 82/100 (C2
-                        Proficient).</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <h1 class="subtitle">Technologies I have used</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
-            <div class="item" *ngFor="let tech of this.technologies">
-                <div class="logo-container center-content">
-                    <img class="technology-logo" src="{{tech.logoPath}}">
-                </div>
-                <div class="text-container center-content normal-text">
-                    <p class="technology-text center-content">{{tech.text}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </div>
