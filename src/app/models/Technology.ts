@@ -1,10 +1,14 @@
 export class Technology {
     
-    text?: String
+    name?: String
     logoPath?: String
+    url?: String
+    currentlyUsed?: String
 
-    constructor({text, logoPath}: {text?: String, logoPath?: String}) {
-        this.text = text
+    constructor({name, logoPath, url, currentlyUsed}: {name?: String, logoPath?: String, url: String, currentlyUsed: String}) {
+        this.name = name
         this.logoPath = logoPath
+        this.url = url;
+        this.currentlyUsed = currentlyUsed;
     }
 }

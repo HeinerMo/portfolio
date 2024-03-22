@@ -38,18 +38,39 @@
 
         <div class="row">
             <div class="col">
+                <h1 class="subtitle">What I currently work with</h1>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
+                <div class="item" *ngFor="let tech of this.currentTechnologies">
+                    <div class="logo-container center-content">
+                        <img class="technology-logo" src="{{tech.logoPath}}">
+                    </div>
+                    <div class="text-container center-content normal-text">
+                        <p class="technology-text center-content">{{tech.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
                 <h1 class="subtitle">Technologies I have used</h1>
             </div>
         </div>
 
         <div class="row">
             <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
-                <div class="item" *ngFor="let tech of this.technologies">
+                <div class="item" *ngFor="let tech of this.usedTechnologies">
                     <div class="logo-container center-content">
                         <img class="technology-logo" src="{{tech.logoPath}}">
                     </div>
                     <div class="text-container center-content normal-text">
-                        <p class="technology-text center-content">{{tech.text}}</p>
+                        <p class="technology-text center-content">{{tech.name}}</p>
                     </div>
                 </div>
             </div>
