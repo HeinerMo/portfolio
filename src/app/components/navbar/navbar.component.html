@@ -1,4 +1,4 @@
-<div *ngIf="!handsetData.isHandset()" class="navbar">
+<div *ngIf="!handsetData.isHandset()" class="navbar general-background">
     <button class="navigation-button normal-text" routerLink="/app-home" routerLinkActive="active"
         ariaCurrentWhenActive="page"><span>Home</span></button>
     <button class="navigation-button normal-text" routerLink="/app-software" routerLinkActive="active"
@@ -12,21 +12,23 @@
 </div>
 
 
-<div class="nav-handset-container" *ngIf="handsetData.isHandset()">
+<div class="nav-handset-container general-background" *ngIf="handsetData.isHandset()">
+
+
 
     <div class="nav-toggle" (click)="this.toggle()">
-        <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': this.collapsed}">
+        <div class="toggle-text-active general-background" [ngClass]="{'toggle-text-disabled': this.collapsed}">
             Close
         </div>
     </div>
 
     <div class="nav-toggle" (click)="this.toggle()">
-        <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': !this.collapsed}">
+        <div class="toggle-text-active general-background" [ngClass]="{'toggle-text-disabled': !this.collapsed}">
             Menu
         </div>
     </div>
 
-    <div (click)="this.toggle()" class="nav-menu" [ngClass]="{'nav-menu-enabled': !this.collapsed}">
+    <div (click)="this.toggle()" class="nav-menu general-background" [ngClass]="{'nav-menu-enabled': !this.collapsed}">
         <div class="nav-items">
             <button class="navigation-button-handset normal-text" routerLink="/app-home" routerLinkActive="active"
                 ariaCurrentWhenActive="page">Home</button>
@@ -40,5 +42,5 @@
                 ariaCurrentWhenActive="page">Contact</button>
         </div>
     </div>
-    <div class="backdrop" [ngClass]="{'backdrop-enabled': !this.collapsed}"></div>
+    <div class="backdrop general-background" [ngClass]="{'backdrop-enabled': !this.collapsed}"></div>
 </div>
