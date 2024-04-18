@@ -45,14 +45,15 @@
 
         <div class="row">
             <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
-                <a href="{{tech.url}}" target="_blank" class="item action-button" *ngFor="let tech of this.currentTechnologies">
+                <div class="item action-button" *ngFor="let tech of this.currentTechnologies">
                     <div class="logo-container center-content">
                         <img class="technology-logo" src="{{tech.logoPath}}">
                     </div>
                     <div class="text-container center-content normal-text">
                         <p class="technology-text center-content">{{tech.name}}</p>
                     </div>
-                </a>
+                    <a class="center-content" href="{{tech.url}}" target="_blank">Read More</a>
+                </div>
             </div>
         </div>
 
@@ -65,14 +66,16 @@
 
         <div class="row">
             <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
-                <a href="{{tech.url}}" target="_blank" class="item action-button" *ngFor="let tech of this.usedTechnologies">
+                <div class="item action-button"
+                    *ngFor="let tech of this.usedTechnologies">
                     <div class="logo-container center-content">
                         <img class="technology-logo" src="{{tech.logoPath}}">
                     </div>
                     <div class="text-container center-content normal-text">
                         <p class="technology-text center-content">{{tech.name}}</p>
                     </div>
-                </a>
+                    <a class="center-content" href="{{tech.url}}" target="_blank">Read More</a>
+                </div>
             </div>
         </div>
     </div>
