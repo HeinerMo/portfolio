@@ -1,9 +1,27 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 html { 
-    background-color: rgb(255, 255, 255);
+    background-color: #333333;
     display: flex;
     justify-content: center;
+    padding: 1em;
+}
+
+
+.page-container {
+    margin-bottom: 10%;
+}
+
+.page-content {
+    flex: 1;
+    padding: 1em;
+}
+
+body {
+    background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 1px 1px 6px black, -1px -1px 6px grey, inset 0 0 5px #323232;
 }
 
 a {
@@ -12,22 +30,6 @@ a {
 
 a:hover {
     color: rgb(56, 55, 53);
-}
-
-.page-container {
-    display: flex;
-}
-
-.page-content {
-    flex: 1;
-    margin-top: 1em;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-body {
-    background-color: transparent;
-    width: 100%;
 }
 
 .center-content {
@@ -51,7 +53,7 @@ body {
 }
 
 .normal-text {
-    color: #000;
+    color: #ccc;
     font-size: 14pt;
 }
 
@@ -60,7 +62,7 @@ body {
 }
 
 p, h1, h2, h3 {
-    color: #000;
+    color: #ccc;
 }
 
 /*
@@ -68,7 +70,7 @@ p, h1, h2, h3 {
     any given subcategory.
 */
 .subtitle {
-    color: #000;
+    color: #ccc;
     width: fit-content;
     padding: 0.5em;
     font-size: 40pt;

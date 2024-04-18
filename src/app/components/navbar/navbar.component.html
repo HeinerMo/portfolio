@@ -1,41 +1,43 @@
 <div *ngIf="!handsetData.isHandset()" class="navbar">
-    <li class="navigation-button normal-text" routerLink="/app-home" routerLinkActive="active"
-        ariaCurrentWhenActive="page">Home</li>
-    <li class="navigation-button normal-text" routerLink="/app-software" routerLinkActive="active"
-        ariaCurrentWhenActive="page">Software Engineering</li>
-    <li class="navigation-button normal-text" routerLink="/app-projects" routerLinkActive="active"
-        ariaCurrentWhenActive="page">Software Projects</li>
-    <li class="navigation-button normal-text" routerLink="/app-contact" routerLinkActive="active"
-        ariaCurrentWhenActive="page">Contact</li>
+    <button class="navigation-button normal-text" routerLink="/app-home" routerLinkActive="active"
+        ariaCurrentWhenActive="page"><span>Home</span></button>
+    <button class="navigation-button normal-text" routerLink="/app-software" routerLinkActive="active"
+        ariaCurrentWhenActive="page"><span>Software Engineering</span></button>
+    <button class="navigation-button normal-text" routerLink="/app-projects" routerLinkActive="active"
+        ariaCurrentWhenActive="page"><span>Software Projects</span></button>
+    <button class="navigation-button normal-text" routerLink="/app-Photography" routerLinkActive="active"
+        ariaCurrentWhenActive="page"><span>Photography</span></button>
+    <button class="navigation-button normal-text" routerLink="/app-contact" routerLinkActive="active"
+        ariaCurrentWhenActive="page"><span>Contact</span></button>
 </div>
 
 
 <div class="nav-handset-container" *ngIf="handsetData.isHandset()">
-    <div>
 
-        <div class="nav-toggle" (click)="this.toggle()">
-            <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': this.collapsed}">
-                Close
-            </div>
+    <div class="nav-toggle" (click)="this.toggle()">
+        <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': this.collapsed}">
+            Close
         </div>
-
-        <div class="nav-toggle" (click)="this.toggle()">
-            <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': !this.collapsed}">
-                Menu
-            </div>
-        </div>
-
     </div>
+
+    <div class="nav-toggle" (click)="this.toggle()">
+        <div class="toggle-text-active" [ngClass]="{'toggle-text-disabled': !this.collapsed}">
+            Menu
+        </div>
+    </div>
+
     <div (click)="this.toggle()" class="nav-menu" [ngClass]="{'nav-menu-enabled': !this.collapsed}">
         <div class="nav-items">
-            <li class="navigation-button-handset normal-text" routerLink="/app-home" routerLinkActive="active"
-                ariaCurrentWhenActive="page">Home</li>
-            <li class="navigation-button-handset normal-text" routerLink="/app-software" routerLinkActive="active"
-                ariaCurrentWhenActive="page">Software Engineering</li>
-            <li class="navigation-button-handset normal-text" routerLink="/app-projects" routerLinkActive="active"
-                ariaCurrentWhenActive="page">Software Projects</li>
-            <li class="navigation-button-handset normal-text" routerLink="/app-contact" routerLinkActive="active"
-                ariaCurrentWhenActive="page">Contact</li>
+            <button class="navigation-button-handset normal-text" routerLink="/app-home" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Home</button>
+            <button class="navigation-button-handset normal-text" routerLink="/app-software" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Software Engineering</button>
+            <button class="navigation-button-handset normal-text" routerLink="/app-projects" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Software Projects</button>
+            <button class="navigation-button-handset normal-text" routerLink="/app-Photography" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Photography</button>
+            <button class="navigation-button-handset normal-text" routerLink="/app-contact" routerLinkActive="active"
+                ariaCurrentWhenActive="page">Contact</button>
         </div>
     </div>
     <div class="backdrop" [ngClass]="{'backdrop-enabled': !this.collapsed}"></div>
