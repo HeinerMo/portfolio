@@ -86,22 +86,27 @@ p, h1, h2, h3 {
     General Action Button
 */
 .action-button {
-    all:unset;
-    display: flex;
-    font-size: large;
-    font-weight: 5000;
-    padding: 1em;;
-    background-color: #201C3B90;
-    width: 100%;
-    margin-bottom: 1em;
+    flex: 1;
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 100%;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    box-shadow: 0.5em 0.5em 1em #d8a395, -0.5em -0.5em 1em #f0e7e2;
+    transition: all 0.2s ease;
+    background: #e8cac0;
+    background: linear-gradient(90deg, #efd6cf 0%, #eccec6 100%);
 }
 
 .action-button:hover {
-    background-color: rgba(76, 71, 97);
+    background: #eccec6;
 }
 
 .action-button:active {
-    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0.5em 0.5em 1em #d8a395, -0.2em -0.2em 1em #f0e7e2;
 }
 
 /*
