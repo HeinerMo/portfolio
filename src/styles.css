@@ -8,10 +8,9 @@ html {
 
 
 .page-container {
-    margin-bottom: 10%;
     box-shadow: 0.5em 0.5em 1em #d8a395, -0.5em -0.5em 1em #f0e7e2;
     border-radius: 4em;
-    padding: 4em;
+    padding: 2em;
     min-height: 100vh;
 }
 
