@@ -3,19 +3,22 @@
 html { 
     display: flex;
     justify-content: center;
-    padding: 1em;
 }
 
 
 .page-container {
-    box-shadow: 0.5em 0.5em 1em #d8a395, -0.5em -0.5em 1em #f0e7e2;
-    border-radius: 4em;
-    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid #888;
     min-height: 100vh;
 }
 
 .page-content {
     flex: 1;
+    max-width: 40% vw;
+    padding: 1em;
 }
 
 body {
@@ -25,8 +28,7 @@ body {
 }
 
 .general-background {
-    background: #e8cac0;
-    background: linear-gradient(90deg, #efd6cf 0%, #eccec6 100%);
+    background: #eee;
 }
 
 a {
@@ -58,16 +60,12 @@ a:hover {
 }
 
 .normal-text {
-    color: #754634;
+    color: #000;
     font-size: 14pt;
 }
 
-.default-radius {
-    border-radius: 5px;
-}
-
 p, h1, h2, h3 {
-    color: #754634;
+    color: #000;
 }
 
 /*
@@ -75,7 +73,7 @@ p, h1, h2, h3 {
     any given subcategory.
 */
 .subtitle {
-    color: #754634;
+    color: #000;
     width: fit-content;
     padding: 0.5em;
     font-size: 40pt;
@@ -91,21 +89,19 @@ p, h1, h2, h3 {
     max-width: 100%;
     cursor: pointer;
     padding: 0.5em;
-    border-radius: 1em;
     border: none;
-    outline: none;
-    box-shadow: 0.5em 0.5em 1em #d8a395, -0.5em -0.5em 1em #f0e7e2;
+    outline: 1px solid #888;
     transition: all 0.2s ease;
-    background: #e8cac0;
-    background: linear-gradient(90deg, #efd6cf 0%, #eccec6 100%);
+    background: #0000;
 }
 
 .action-button:hover {
-    background: #eccec6;
+    background: #dbdbdb;
+
 }
 
 .action-button:active {
-    box-shadow: inset 0.5em 0.5em 1em #d8a395, -0.2em -0.2em 1em #f0e7e2;
+    background: #eee;
 }
 
 /*
@@ -116,7 +112,5 @@ p, h1, h2, h3 {
     display: block;
     margin-top: 4em;
     padding: 1em;
-    box-shadow: 0.5em 0.5em 1em #d8a395, -0.5em -0.5em 1em #f0e7e2;
-    border-radius: 4em;
     min-height: 100vh;
 }
