@@ -1,19 +1,6 @@
 
 .project-container {
     padding: 1em;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-bottom: 2em;
-}
-
-/*
-    CSS for handset
-*/
-
-.project-container-handset {
-    padding: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    display: block;
+    margin: 0.2em;
+    text-decoration: none;
 }

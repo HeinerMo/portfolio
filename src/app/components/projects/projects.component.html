@@ -12,7 +12,7 @@
 
         <div *ngIf="!handsetData.isHandset()">
             <div class="row" *ngFor="let project of this.projects">
-                <a href="{{project.repositoryUrl}}" target="_blank" class="action-button">
+                <a href="{{project.repositoryUrl}}" target="_blank" class="action-button project-container">
                     <div class="project-info">
                         <h3>
                             {{project.name}} <mat-icon>launch</mat-icon>
@@ -29,7 +29,7 @@
 
         <div *ngIf="handsetData.isHandset()">
             <div class="row" *ngFor="let project of this.projects">
-                <a href="{{project.repositoryUrl}}" target="_blank" class="action-button">
+                <a href="{{project.repositoryUrl}}" target="_blank" class="action-button project-container">
                     <div class="project-info">
                         <h3>
                             {{project.name}} <mat-icon>launch</mat-icon>
