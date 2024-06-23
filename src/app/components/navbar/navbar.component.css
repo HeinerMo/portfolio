@@ -40,6 +40,8 @@
     border: none;
     background: none;
     background-color: #777;
+    font-size: 1.2em;
+    font-weight: bold;
     transition: all 0.2s ease;
 }
 
@@ -99,11 +101,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 4em;
-    top: 3em;
+    right: 2em;
+    top: 1em;
+    padding: 1em;
     opacity: 1;
-    width: 6em;
-    height: 6em;
+    font-size: 1.2em;
+    font-weight: bold;
     background-color: #777;
 }
 
@@ -119,6 +122,8 @@
     outline: 1px solid #888;
     background-color: #777;
     align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
     transition: all 0.2s ease;
 }
 

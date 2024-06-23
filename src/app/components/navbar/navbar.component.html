@@ -22,8 +22,8 @@
 <div class="nav-handset-container" *ngIf="handsetData.isHandset()">
 
     <div class="nav-toggle" (click)="this.toggle()" [ngClass]="{'nav-toggle-active': !this.collapsed}">
-        <h2 *ngIf="!this.collapsed">Close</h2>
-        <h2 *ngIf="this.collapsed">Menu</h2>
+        <span *ngIf="!this.collapsed">Close</span>
+        <span *ngIf="this.collapsed">Menu</span>
     </div>
 
     <div (click)="this.toggle()" class="nav-menu" [ngClass]="{'nav-menu-enabled': !this.collapsed}">

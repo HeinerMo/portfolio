@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    font-family: "minion-pro", Georgia, Times, "Times New Roman", serif;
 }
 
 .page-container {
@@ -66,30 +67,34 @@ a:hover {
 
 .normal-text {
     color: #000;
-    font-family: "minion-pro", Georgia, Times, "Times New Roman", serif;
-    font-size: 1.6em;
+    font-size: 1.1em;
     text-indent: 2em;
 }
 
 h1 {
     color: #000;
-    font-family: "minion-pro", Georgia, Times, "Times New Roman", serif;
-    font-size: 3.5em;
+    font-size: 2em;
+    text-align: center;
     font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h2 {
     color: #000;
-    font-family: "minion-pro", Georgia, Times, "Times New Roman", serif;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h3 {
     color: #000;
-    font-family: "minion-pro", Georgia, Times, "Times New Roman", serif;
-    text-indent: 1.6em;
+    text-indent: 1.1em;
     font-style: italic;
+    text-indent: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .reference {
