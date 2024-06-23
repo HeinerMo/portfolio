@@ -25,6 +25,7 @@ body {
     width: 1280px;
     max-width: 90vw;
     min-height: 100vh;
+    margin-bottom: 2em;
 }
 
 .page-content {
@@ -69,6 +70,11 @@ a:hover {
     color: #000;
     font-size: 1.1em;
     text-indent: 2em;
+}
+
+.no-indent-text {
+    color: #000;
+    font-size: 1.1em;
 }
 
 h1 {
