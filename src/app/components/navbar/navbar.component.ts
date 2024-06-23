@@ -16,12 +16,13 @@ export class NavbarComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
-    this.breakpointObserver.observe(Breakpoints.Handset).subscribe((result: any) => {
+    this.breakpointObserver.observe(Breakpoints.Web).subscribe((result: any) => {
       this.handsetData.setHandset(false)
-      if (result.matches) {
+      if (!result.matches) {
         this.handsetData.setHandset(true)
       }
     })
+
   }
 
   public toggle() {
