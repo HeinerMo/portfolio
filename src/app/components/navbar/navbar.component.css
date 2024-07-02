@@ -53,6 +53,10 @@
     background: #eee;
 }
 
+.active-link {
+    background: #eee;
+  }
+
 /*
     background-color: #efd6cf;
     background-color: linear-gradient(90deg, #efd6cf, 0%, #e8cac0, 100%);
