@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <h1>Photography</h1>
+    </div>
+    <div>
+        <p>
+            As a hobby I take pictures, nothing exciting, just things that I like.
+        </p>
+    </div>
+    <div class="image-grid">
+        <div class="image-container" *ngFor="let photo of photographs">
+            <img [src]="photo.path" alt="Image title">
+            <h4>Title</h4>
+            <p>details</p>
+        </div>
+    </div>
+</div>

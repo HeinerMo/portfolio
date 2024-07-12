@@ -1,0 +1,24 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    gap: 1em;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container h4, .image-container p {
+    margin: 0.5em 0 0;
+    padding: 0 0.5em;
+    width: 100%;
+}

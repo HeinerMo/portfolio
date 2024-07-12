@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SoftwareComponent } from './components/software/software.component';
+import { PhotographyComponent } from './components/photography/photography.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
   ,{ path: 'app-projects', component: ProjectsComponent }
   ,{ path: 'app-contact', component: ContactComponent}
   ,{ path: 'app-software', component: SoftwareComponent}
+  ,{ path: 'app-photography', component: PhotographyComponent}
   ,{ path: '**', component: HomeComponent }
 ];
 
