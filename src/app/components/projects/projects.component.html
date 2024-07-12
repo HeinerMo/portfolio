@@ -1,44 +1,34 @@
-<div class="page-container" [ngClass]="{'page-container-handset': handsetData.isHandset()}">
-    <div class="page-content">
-        <div class="row">
-            <div class="col">
-                <h1 class="subtitle">Software Projects</h1>
+<h1 class="subtitle">Software Projects</h1>
+<div *ngIf="!handsetData.isHandset()">
+    <div class="row" *ngFor="let project of this.projects">
+        <a href="{{project.repositoryUrl}}" target="_blank" class="action-button project-container">
+            <div class="project-info">
+                <h3>
+                    {{project.name}} <mat-icon>launch</mat-icon>
+                </h3>
+                <div class="project-description">
+                    <p class="normal-text">
+                        {{project.description}}
+                    </p>
+                </div>
             </div>
-        </div>
+        </a>
+    </div>
+</div>
 
-
-        <div *ngIf="!handsetData.isHandset()">
-            <div class="row" *ngFor="let project of this.projects">
-                <a href="{{project.repositoryUrl}}" target="_blank" class="action-button project-container">
-                    <div class="project-info">
-                        <h3>
-                            {{project.name}} <mat-icon>launch</mat-icon>
-                        </h3>
-                        <div class="project-description">
-                            <p class="normal-text">
-                                {{project.description}}
-                            </p>
-                        </div>
-                    </div>
-                </a>
+<div *ngIf="handsetData.isHandset()">
+    <div class="row" *ngFor="let project of this.projects">
+        <a href="{{project.repositoryUrl}}" target="_blank" class="action-button project-container">
+            <div class="project-info">
+                <h3>
+                    {{project.name}} <mat-icon>launch</mat-icon>
+                </h3>
+                <div class="project-description">
+                    <p>
+                        {{project.description}}
+                    </p>
+                </div>
             </div>
-        </div>
-
-        <div *ngIf="handsetData.isHandset()">
-            <div class="row" *ngFor="let project of this.projects">
-                <a href="{{project.repositoryUrl}}" target="_blank" class="action-button project-container">
-                    <div class="project-info">
-                        <h3>
-                            {{project.name}} <mat-icon>launch</mat-icon>
-                        </h3>
-                        <div class="project-description">
-                            <p>
-                                {{project.description}}
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        </a>
     </div>
 </div>
