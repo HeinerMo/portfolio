@@ -90,6 +90,10 @@ h3 {
     background: #0000;
 }
 
+.basic-outline {
+    outline: 1px solid #888;
+}
+
 .action-button:hover {
     background: #dbdbdb;
 
