@@ -16,7 +16,6 @@ import { SoftwareComponent } from './components/software/software.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { PhotographyComponent } from './components/photography/photography.component';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 @NgModule({
   declarations: [
