@@ -30,7 +30,6 @@ export class SoftwareComponent implements OnInit {
       (technologies: Technology[]) => {
 
         technologies.forEach(tech => {
-          console.log(tech.currentlyUsed)
           if (tech.currentlyUsed == "true") {
             this.currentTechnologies.push(tech);
           } else {
