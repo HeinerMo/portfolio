@@ -1,44 +1,33 @@
-<div *ngIf="!handsetData.isHandset()" class="navbar">
-    <div class="nav-row">
-        <div class="logo">
-            H.M.
-        </div>
-        <div class="buttons">
-            <button class="navigation-button" routerLink="/app-home" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page"><span>Home</span></button>
-            <button class="navigation-button " routerLink="/app-software" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page"><span>Software Engineering</span></button>
-            <button class="navigation-button " routerLink="/app-projects" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page"><span>Software Projects</span></button>
-            <button class="navigation-button " routerLink="/app-photography" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page"><span>Photography</span></button>
-            <button class="navigation-button " routerLink="/app-contact" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page"><span>Contact</span></button>
-        </div>
-    </div>
-</div>
-
-
-<div class="nav-handset-container" *ngIf="handsetData.isHandset()">
-
-    <div class="nav-toggle" (click)="this.toggle()" [ngClass]="{'nav-toggle-active': !this.collapsed}">
-        <span *ngIf="!this.collapsed">Close</span>
-        <span *ngIf="this.collapsed">Menu</span>
-    </div>
-
-    <div (click)="this.toggle()" class="nav-menu" [ngClass]="{'nav-menu-enabled': !this.collapsed}">
-        <div class="nav-items">
-            <button class="navigation-button-handset" routerLink="/app-home" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page">Home</button>
-            <button class="navigation-button-handset" routerLink="/app-software" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page">Software Engineering</button>
-            <button class="navigation-button-handset" routerLink="/app-projects" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page">Software Projects</button>
-            <button class="navigation-button-handset" routerLink="/app-photography" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page">Photography</button>
-            <button class="navigation-button-handset" routerLink="/app-contact" routerLinkActive="active-link"
-                ariaCurrentWhenActive="page">Contact</button>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">H.M.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/app-home" routerLinkActive="active-link"
+                        ariaCurrentWhenActive="page"><span>Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/app-software" routerLinkActive="active-link"
+                        ariaCurrentWhenActive="page"><span>Software Engineering</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/app-projects" routerLinkActive="active-link"
+                        ariaCurrentWhenActive="page"><span>Software Projects</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/app-photography" routerLinkActive="active-link"
+                        ariaCurrentWhenActive="page"><span>Photography</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/app-contact" routerLinkActive="active-link"
+                        ariaCurrentWhenActive="page"><span>Contact</span></a>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="backdrop" [ngClass]="{'backdrop-enabled': !this.collapsed}"></div>
-</div>
+</nav>

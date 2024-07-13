@@ -10,8 +10,8 @@ import { HandsetData } from 'src/app/models/HandsetData';
 export class NavbarComponent implements OnInit {
 
   handsetData: HandsetData = HandsetData.getInstance()
-  
-  collapsed : boolean = true;
+
+  collapsed: boolean = true;
 
   constructor(private breakpointObserver: BreakpointObserver) { }
 

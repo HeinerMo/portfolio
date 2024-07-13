@@ -9,7 +9,7 @@ import { PhotographyComponent } from './components/photography/photography.compo
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'app-home',
     component: HomeComponent,
     children: [
       {path: 'navbar-component', component: NavbarComponent}
@@ -20,7 +20,7 @@ const routes: Routes = [
   ,{ path: 'app-contact', component: ContactComponent}
   ,{ path: 'app-software', component: SoftwareComponent}
   ,{ path: 'app-photography', component: PhotographyComponent}
-  ,{ path: '**', component: HomeComponent }
+  ,{ path: '**', redirectTo: 'app-home' }
 ];
 
 

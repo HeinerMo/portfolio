@@ -7,7 +7,6 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { P5backgroundComponent } from './components/p5background/p5background.component';
 import { MatToolbarModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
@@ -17,6 +16,7 @@ import { SoftwareComponent } from './components/software/software.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { PhotographyComponent } from './components/photography/photography.component';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,6 @@ import { PhotographyComponent } from './components/photography/photography.compo
     NavbarComponent,
     ProjectsComponent,
     ContactComponent,
-    P5backgroundComponent,
     SoftwareComponent,
     PhotographyComponent,
   ],

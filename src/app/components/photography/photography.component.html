@@ -14,8 +14,30 @@
             <p>{{photo.date}}
             </p>
             <div *ngFor="let detail of photo.details">
-            <p>{{detail}}</p>
+                <p>{{detail}}</p>
+            </div>
         </div>
+    </div>
+</div>
+
+<div>
+    <div>
+        <h1>Photography</h1>
+    </div>
+    <div>
+        <p class="normal-text">
+            As a hobby I take pictures, nothing exciting, just things that I like.
+        </p>
+    </div>
+    <div class="image-grid">
+        <div class="image-container basic-outline" *ngFor="let photo of photographs">
+            <img [src]="photo.path" alt="Image title">
+            <h4>{{photo.title}}</h4>
+            <p>{{photo.date}}
+            </p>
+            <div *ngFor="let detail of photo.details">
+                <p>{{detail}}</p>
+            </div>
         </div>
     </div>
 </div>
