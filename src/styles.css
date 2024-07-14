@@ -1,3 +1,7 @@
+/* styles.css */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
 .general-background {
     background: #eee;
 }

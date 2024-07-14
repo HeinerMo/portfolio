@@ -16,11 +16,11 @@
     width: 100%;
     height: auto;
     display: block;
+    height: 30vh; /* Example using viewport height */
+    object-fit: cover;
 }
 
-.image-container h4,
-.image-container p {
-    margin: 0.5em 0 0;
-    padding: 0 0.5em;
+.modal-body img {
     width: 100%;
+    height: auto;
 }

@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>{{ data.title }}</h1>
+<div mat-dialog-content>
+    <img [src]="data.path" alt="{{ data.title }}" style="max-width: 100%;">
+    <p>Date: {{ data.date }}</p>
+    <p *ngFor="let detail of data.details">{{ detail }}</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="close()">Close</button>
+</div>
