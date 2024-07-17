@@ -16,11 +16,40 @@
     width: 100%;
     height: auto;
     display: block;
-    height: 30vh; /* Example using viewport height */
+    height: 20vh; /* Example using viewport height */
     object-fit: cover;
 }
 
 .modal-body img {
     width: 100%;
     height: auto;
+}
+
+
+/*Handset styles*/
+.image-grid-handset {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    gap: 1em;
+}
+
+.image-container-handset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.image-container-handset img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container-handset h4,
+.image-container-handset p {
+    margin: 0.5em 0 0;
+    padding: 0 0.5em;
+    width: 100%;
 }

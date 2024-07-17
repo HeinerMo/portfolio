@@ -8,16 +8,33 @@
             As a hobby I take pictures, nothing exciting, just things that I like.
         </p>
     </div>
-    <div class="image-grid">
-        <div class="image-container action-button" *ngFor="let photo of photographs" (click)="openModal(photo)">
-            <img [src]="photo.path" alt="Image title">
-            <h4>{{photo.title}}</h4>
-            <p>{{photo.date}}</p>
-            <div *ngFor="let detail of photo.details">
-                <p>{{detail}}</p>
+
+
+    <div *ngIf="!handsetData.isHandset()">
+        <div class="image-grid">
+
+            <div class="image-container action-button" *ngFor="let photo of photographs" (click)="openModal(photo)">
+                <img [src]="photo.path" alt="Image title">
+                <h4>{{photo.title}} <mat-icon>zoom_in</mat-icon></h4>
+                <p>{{photo.date}}</p>
+                <div *ngFor="let detail of photo.details">
+                    <p>{{detail}}</p>
+                </div>
             </div>
         </div>
     </div>
-    
 
+    <div *ngIf="handsetData.isHandset()">
+        <div class="image-grid-handset">
+            <div class="image-container-handset basic-outline" *ngFor="let photo of photographs">
+                <img [src]="photo.path" alt="Image title">
+                <h4>{{photo.title}}</h4>
+                <p>{{photo.date}}
+                </p>
+                <div *ngFor="let detail of photo.details">
+                    <p>{{detail}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
