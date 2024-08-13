@@ -5,6 +5,7 @@ import { Photograph } from 'src/app/models/Photograph';
 import { PhotographService } from 'src/services/PhotographService';
 import { ImageModalComponent } from '../../reusable/image-modal/image-modal.component';
 import { MatDialog } from '@angular/material/dialog';
+import { PageDataService } from 'src/services/PageDataService';
 
 @Component({
   selector: 'app-photography',
@@ -17,9 +18,17 @@ export class PhotographyComponent {
   handsetData: HandsetData = HandsetData.getInstance()
   selectedPhoto: any = null;
   dialogRef : any;
+  title? : string;
+  intro?: string;
 
-  constructor(private photographService: PhotographService, private dialog: MatDialog) {
+  constructor(private photographService: PhotographService, private dialog: MatDialog, private pageDataService : PageDataService) {
     this.loadPhotos();
+    this.pageDataService.getValue('PhotographyTitle').subscribe(value => {
+      this.title = value;
+    })
+    this.pageDataService.getValue('PhotographyIntroduction').subscribe(value => {
+      this.intro = value;
+    })
   }
 
   openModal(photo: Photograph): void {

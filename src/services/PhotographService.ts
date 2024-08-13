@@ -3,14 +3,19 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Photograph } from 'src/app/models/Photograph';
+import { SiteConfig } from './SiteConfig';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PhotographService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private config: SiteConfig) { }
 
   getPhotos(): Observable<Photograph[]> {
-    return this.http.get<Photograph[]>('./assets/data/Photography.json');
+    if (this.config.getLanguage() == "es") {
+      return this.http.get<Photograph[]>('./assets/data/Photography-ES.json');
+    } else {
+      return this.http.get<Photograph[]>('./assets/data/Photography-EN.json');
+    }
   }
 }

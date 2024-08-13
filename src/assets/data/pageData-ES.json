@@ -1,0 +1,15 @@
+{
+    "HomeTitle": "Hola, soy Heiner!",
+    "HomeIntroduction": "Soy ingeniero de software, fotógrafo y, en general, un aficionado a la tecnología. La única cosa que amo más que aprender es aprender haciendo. Este sitio contiene algunas de las cosas que me gustan. ¡Siéntete libre de explorar!",
+    "HomeNav": "Inicio",
+
+    
+    "SoftwareEngineeringNav": "Ingeniería de Software",
+    "SoftwareProjectsNav": "Proyectos de Software",
+
+    "PhotographyTitle": "Fotografía",
+    "PhotographyIntroduction": "La fotografía es uno de mis pasatiempos, aquí puedes ver algunas de mis fotos favoritas.",
+    "PhotographyNav": "Fotografía",
+
+    "ContactNav": "Contacto"
+}

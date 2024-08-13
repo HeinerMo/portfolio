@@ -1,0 +1,14 @@
+{
+    "HomeTitle": "Hello, I'm Heiner!",
+    "HomeIntroduction": "I'm a software engineer, photographer and generally a nerd. The only thing I love more than learning is learning by doing. This site contains some of the things I like. Feel free to look around!",
+    "HomeNav": "Home",
+
+    "SoftwareEngineeringNav": "Software Engineering",
+    "SoftwareProjectsNav": "Software Projects",
+
+    "PhotographyTitle": "Photography",
+    "PhotographyIntroduction": "As a hobby I take pictures, nothing exciting, just things that I like.",
+    "PhotographyNav": "Photography",
+
+    "ContactNav": "Contact"
+}
