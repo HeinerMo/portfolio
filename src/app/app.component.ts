@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SiteConfig } from '../services/SiteConfig';
 
 @Component({
   selector: 'app-root',
