@@ -4,7 +4,14 @@
     "HomeNav": "Home",
 
     "SoftwareEngineeringNav": "Software Engineering",
-    "SoftwareProjectsNav": "Software Projects",
+		"SoftwareEngineeringIntro": "Problem solving is my passion. Do you know the steps to solve a problem? Requirements, Analysis, Design, Construction, Testing, Implantation and Monitoring!",
+		"SoftwareEngineeringTitle": "I'm a Software Engineer!", 
+
+		"CertificationsTitle": "Certifications",
+		"CurrentTechnologies": "What I currently work with",
+		"PreviousTechnologies": "What I have worked with:",
+    
+		"SoftwareProjectsNav": "Software Projects",
 
     "PhotographyTitle": "Photography",
     "PhotographyIntroduction": "As a hobby I take pictures, nothing exciting, just things that I like.",

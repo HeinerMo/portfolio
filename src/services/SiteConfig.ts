@@ -2,38 +2,44 @@ import { Injectable } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 
 @Injectable({
-    providedIn: 'root'
+	providedIn: 'root'
 })
 export class SiteConfig {
 
-    private constructor(private cookieService: CookieService) {
-        this.detectLanguage();
-        console.log(this.getLanguage())
-    }
+	private constructor(private cookieService: CookieService) {
+		this.detectLanguage();
+	}
 
-    public setLanguage(lang: string) {
-        this.cookieService.set('lang', lang);
-    }
+	public setLanguage(lang: string) {
 
-    public getLanguage(): string {
-        return this.cookieService.get("lang");
-    }
+		if (lang === "es" || lang === "en") {
+			this.cookieService.set('lang', lang);
+			document.documentElement.lang = lang;
+		} else {
+			this.cookieService.set('en', lang);
+			document.documentElement.lang = 'en';
+		}
+	}
 
-    private detectLanguage() {
-        var lang = this.getLanguage();
-        if (lang === "") {
-            var lang = navigator.language.split('-')[0].toLowerCase();
-            this.setLanguage(lang);
-        }
-    }
+	public getLanguage(): string {
+		return this.cookieService.get("lang");
+	}
 
-    public toggleLanguage() {
-        var current = this.getLanguage();
+	private detectLanguage() {
+		var lang = this.getLanguage();
+		if (lang === "") {
+			lang = navigator.language.split('-')[0].toLowerCase();
+		}
+		this.setLanguage(lang);
+	}
 
-        if (current === "es") {
-            this.setLanguage("en")
-        } else {
-            this.setLanguage("es")
-        }
-    }
+	public toggleLanguage() {
+		var current = this.getLanguage();
+
+		if (current === "es") {
+			this.setLanguage("en")
+		} else {
+			this.setLanguage("es")
+		}
+	}
 }

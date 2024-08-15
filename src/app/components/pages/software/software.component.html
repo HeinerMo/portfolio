@@ -1,70 +1,69 @@
-<h1>I'm a Software Engineer!</h1>
+<h1>{{this.title}}</h1>
 <div class="row">
-    <div class="col">
-        <p class="normal-text">
-            Problem solving is my passion. Do you know the steps to solve a problem? Requirements, Analysis,
-            Design, Construction, Testing, Implantation and Monitoring!
-        </p>
-    </div>
+	<div class="col">
+		<p class="normal-text">
+		{{this.intro}}
+		</p>
+	</div>
 </div>
 
 <div class="row">
-    <div class="col">
-        <h2>Certifications</h2>
-    </div>
+	<div class="col">
+		<h2>{{this.certificationsTitle}}</h2>
+	</div>
 </div>
 
 <div class="row">
-    <div class="col">
-        <ul class="no-indent-text" [ngClass]="{'basic-list-handset': handsetData.isHandset()}">
-            <li><a href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-HeinerMongeLopez-953866.pdf"
-                    target="_blank">Scrum Fundamentals Certified.</a></li>
-            <li><a href="assets/docs/belt.pdf" target="_blank">English- Level: C1 BELT English, Idioma
-                    Internacional, March 2023.</a></li>
-            <li><a href="https://www.efset.org/cert/wDv4WF" target="_blank">EFSET English Certificate 82/100 (C2
-                    Proficient).</a></li>
-        </ul>
-    </div>
+	<div class="col">
+		<ul class="no-indent-text" [ngClass]="{'basic-list-handset': handsetData.isHandset()}">
+			<li><a href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-HeinerMongeLopez-953866.pdf"
+						 target="_blank">Scrum Fundamentals Certified.</a></li>
+			<li><a href="assets/docs/belt.pdf" target="_blank">English- Level: C1 BELT English, Idioma
+					Internacional, March 2023.</a></li>
+			<li><a href="https://www.efset.org/cert/wDv4WF" target="_blank">EFSET English Certificate 82/100 (C2
+					Proficient).</a></li>
+		</ul>
+	</div>
 </div>
 
 <div class="row">
-    <div class="col">
-        <h2>What I currently work with</h2>
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
-        <div class="item action-button" *ngFor="let tech of this.currentTechnologies">
-            <div class="logo-container center-content">
-                <img class="technology-logo" src="{{tech.logoPath}}">
-            </div>
-            <div class="text-container center-content no-indent-text">
-                <p class="technology-text center-content">{{tech.name}}</p>
-            </div>
-            <a class="center-content" href="{{tech.url}}" target="_blank">Read More</a>
-        </div>
-    </div>
+	<div class="col">
+		<h2>{{this.inUseTitle}}</h2>
+	</div>
 </div>
 
 
 <div class="row">
-    <div class="col">
-        <h2>Technologies I have used</h2>
-    </div>
+	<div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
+		<div class="item action-button" *ngFor="let tech of this.currentTechnologies">
+			<div class="logo-container center-content">
+				<img class="technology-logo" src="{{tech.logoPath}}">
+			</div>
+			<div class="text-container center-content no-indent-text">
+				<p class="technology-text center-content">{{tech.name}}</p>
+			</div>
+			<a class="center-content" href="{{tech.url}}" target="_blank">Read More</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col">
+		<h2>{{this.usedTitle}}</h2>
+	</div>
 </div>
 
 <div class="row">
-    <div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
-        <div class="item action-button" *ngFor="let tech of this.usedTechnologies">
-            <div class="logo-container center-content">
-                <img class="technology-logo" src="{{tech.logoPath}}">
-            </div>
-            <div class="text-container center-content no-indent-text">
-                <p class="technology-text center-content">{{tech.name}}</p>
-            </div>
-            <a class="center-content" href="{{tech.url}}" target="_blank">Read More</a>
-        </div>
-    </div>
+	<div class="grid" [ngClass]="{'grid-handset': handsetData.isHandset()}">
+		<div class="item action-button" *ngFor="let tech of this.usedTechnologies">
+			<div class="logo-container center-content">
+				<img class="technology-logo" src="{{tech.logoPath}}">
+			</div>
+			<div class="text-container center-content no-indent-text">
+				<p class="technology-text center-content">{{tech.name}}</p>
+			</div>
+			<a class="center-content" href="{{tech.url}}" target="_blank">Read More</a>
+		</div>
+	</div>
 </div>
