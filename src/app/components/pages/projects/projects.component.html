@@ -15,7 +15,7 @@
       </h3>
       <div class="project-description">
 	<p class="normal-text">
-	{{project.description}}
+	  {{ this.siteConfig.getLanguage() === 'es' ? project.descriptionES : project.descriptionEN }}
 	</p>
       </div>
     </div>
