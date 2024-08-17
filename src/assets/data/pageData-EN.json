@@ -1,21 +1,23 @@
 {
-    "HomeTitle": "Hello, I'm Heiner!",
-    "HomeIntroduction": "I'm a software engineer, photographer and generally a nerd. The only thing I love more than learning is learning by doing. This site contains some of the things I like. Feel free to look around!",
-    "HomeNav": "Home",
+  "HomeTitle": "Hello, I'm Heiner!",
+  "HomeIntroduction": "I'm a software engineer, photographer and generally a nerd. The only thing I love more than learning is learning by doing. This site contains some of the things I like. Feel free to look around!",
+  "HomeNav": "Home",
 
-    "SoftwareEngineeringNav": "Software Engineering",
-		"SoftwareEngineeringIntro": "Problem solving is my passion. Do you know the steps to solve a problem? Requirements, Analysis, Design, Construction, Testing, Implantation and Monitoring!",
-		"SoftwareEngineeringTitle": "I'm a Software Engineer!", 
+  "SoftwareEngineeringNav": "Software Engineering",
+  "SoftwareEngineeringIntro": "Problem solving is my passion. Do you know the steps to solve a problem? Requirements, Analysis, Design, Construction, Testing, Implantation and Monitoring!",
+  "SoftwareEngineeringTitle": "I'm a Software Engineer!", 
 
-		"CertificationsTitle": "Certifications",
-		"CurrentTechnologies": "What I currently work with",
-		"PreviousTechnologies": "What I have worked with:",
-    
-		"SoftwareProjectsNav": "Software Projects",
+  "CertificationsTitle": "Certifications",
+  "CurrentTechnologies": "What I currently work with",
+  "PreviousTechnologies": "What I have worked with:",
 
-    "PhotographyTitle": "Photography",
-    "PhotographyIntroduction": "As a hobby I take pictures, nothing exciting, just things that I like.",
-    "PhotographyNav": "Photography",
+  "SoftwareProjectsNav": "Software Projects",
+  "SoftwareProjectsTitle": "Software Projects", 
+  "SoftwareProjectsIntro": "These are some of the projects I have worked on",
 
-    "ContactNav": "Contact"
+  "PhotographyTitle": "Photography",
+  "PhotographyIntroduction": "As a hobby I take pictures, nothing exciting, just things that I like.",
+  "PhotographyNav": "Photography",
+
+  "ContactNav": "Contact"
 }

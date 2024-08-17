@@ -1,23 +1,23 @@
 {
-    "HomeTitle": "Hola, soy Heiner!",
-    "HomeNav": "Inicio",
-    "HomeIntroduction": "Soy ingeniero de software, fotógrafo y, en general, un aficionado a la tecnología. La única cosa que amo más que aprender es aprender haciendo. Este sitio contiene algunas de las cosas que me gustan. ¡Siéntete libre de explorar!",
+  "HomeTitle": "Hola, soy Heiner!",
+  "HomeNav": "Inicio",
+  "HomeIntroduction": "Soy ingeniero de software, fotógrafo y, en general, un aficionado a la tecnología. La única cosa que amo más que aprender es aprender haciendo. Este sitio contiene algunas de las cosas que me gustan. ¡Siéntete libre de explorar!",
 
+  "SoftwareEngineeringTitle": "Soy un Ingeniero de Software", 
+  "SoftwareEngineeringNav": "Ingeniería de Software",
+  "SoftwareEngineeringIntro": "Solucionar problemas es mi pasión. ¿Conoces los pasos para solucionar un problema? Requerimientos, análisisi, diseño, construcción, pruebas, implantación y monitoreo.",
 
-		"SoftwareEngineeringTitle": "Soy un Ingeniero de Software", 
-		"SoftwareEngineeringNav": "Ingeniería de Software",
-		"SoftwareEngineeringIntro": "Solucionar problemas es mi pasión. ¿Conoces los pasos para solucionar un problema? Requerimientos, análisisi, diseño, construcción, pruebas, implantación y monitoreo.",
+  "CertificationsTitle": "Certificaciones",
+  "CurrentTechnologies": "Tecnologías que utilizo actualmente:",
+  "PreviousTechnologies": "Techologías que he utilizado en el pasado:",
 
-		"CertificationsTitle": "Certificaciones",
-		"CurrentTechnologies": "Tecnologías que utilizo actualmente:",
-		"PreviousTechnologies": "Techologías que he utilizado en el pasado:",
-    
-    "SoftwareProjectsNav": "Proyectos de Software",
+  "SoftwareProjectsNav": "Proyectos de Software",
+  "SoftwareProjectsTitle": "Proyectos de Software", 
+  "SoftwareProjectsIntro": "Estos son algunos de los proyectos en los que he trabajado.",
 
+  "PhotographyTitle": "Fotografía",
+  "PhotographyIntroduction": "La fotografía es uno de mis pasatiempos, aquí puedes ver algunas de mis fotos favoritas.",
+  "PhotographyNav": "Fotografía",
 
-    "PhotographyTitle": "Fotografía",
-    "PhotographyIntroduction": "La fotografía es uno de mis pasatiempos, aquí puedes ver algunas de mis fotos favoritas.",
-    "PhotographyNav": "Fotografía",
-
-    "ContactNav": "Contacto"
+  "ContactNav": "Contacto"
 }

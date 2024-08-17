@@ -1,34 +1,24 @@
-<h1 class="subtitle">Software Projects</h1>
-<div *ngIf="!handsetData.isHandset()">
-    <div class="row" *ngFor="let project of this.projects">
-        <a href="{{project.repositoryUrl}}" target="_blank" class="action-button project-container">
-            <div class="project-info">
-                <h3>
-                    {{project.name}} <mat-icon>launch</mat-icon>
-                </h3>
-                <div class="project-description">
-                    <p class="normal-text">
-                        {{project.description}}
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
+<h1>{{this.title}}</h1>
+<div class="row">
+  <div class="col">
+    <p class="normal-text">
+    {{this.intro}}
+    </p>
+  </div>
 </div>
 
-<div *ngIf="handsetData.isHandset()">
-    <div class="row" *ngFor="let project of this.projects">
-        <a href="{{project.repositoryUrl}}" target="_blank" class="action-button project-container">
-            <div class="project-info">
-                <h3>
-                    {{project.name}} <mat-icon>launch</mat-icon>
-                </h3>
-                <div class="project-description">
-                    <p>
-                        {{project.description}}
-                    </p>
-                </div>
-            </div>
-        </a>
+<div class="row" *ngFor="let project of this.projects">
+  <a href="{{project.repositoryUrl}}" target="_blank" class="action-button project-container">
+    <div class="project-info">
+      <h3>
+	{{project.name}} <mat-icon>launch</mat-icon>
+      </h3>
+      <div class="project-description">
+	<p class="normal-text">
+	{{project.description}}
+	</p>
+      </div>
     </div>
+  </a>
 </div>
+
