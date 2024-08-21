@@ -1,40 +1,39 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<a class="website-title" href="#"><h2>Heiner M.</h2></a>
+<div class="navbar-container navbar-background">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">H.M.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Language Toggle aligned to the right -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" routerLink="/app-home" routerLinkActive="active-link"
-                        ariaCurrentWhenActive="page"><span>{{homeNavTitle}}</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" routerLink="/app-software" routerLinkActive="active-link"
-                        ariaCurrentWhenActive="page"><span>{{softwareNavTitle}}</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" routerLink="/app-projects" routerLinkActive="active-link"
-                        ariaCurrentWhenActive="page"><span>{{projectsNavTitle}}</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" routerLink="/app-photography" routerLinkActive="active-link"
-                        ariaCurrentWhenActive="page"><span>{{photographyNavTitle}}</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" routerLink="/app-contact" routerLinkActive="active-link"
-                        ariaCurrentWhenActive="page"><span>{{contactNavTitle}}</span></a>
-                </li>
-            </ul>
-
-            <!-- Language Toggle aligned to the right -->
-            <div class="d-flex ms-auto">
-                <button class="btn btn-outline-secondary" (click)="changeLanguage()" id="toggle-language">{{currentLanguage}}</button>
-            </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <li class="nav-item">
+	    <a class="nav-link active" routerLink="/app-home" routerLinkActive="active-link"
+							      ariaCurrentWhenActive="page">{{homeNavTitle}}</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link active" routerLink="/app-software" routerLinkActive="active-link"
+								  ariaCurrentWhenActive="page">{{softwareNavTitle}}</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link active" routerLink="/app-projects" routerLinkActive="active-link"
+								  ariaCurrentWhenActive="page">{{projectsNavTitle}}</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link active" routerLink="/app-photography" routerLinkActive="active-link"
+								     ariaCurrentWhenActive="page">{{photographyNavTitle}}</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link active" routerLink="/app-contact" routerLinkActive="active-link"
+								 ariaCurrentWhenActive="page">{{contactNavTitle}}</a>
+	  </li>
+	</ul>
+      </div>
     </div>
-</nav>
+  </nav>
+  <div class="d-flex ms-auto">
+    <button class="btn language-button" (click)="changeLanguage()" id="toggle-language">{{currentLanguage}}</button>
+  </div>
+</div>
+
