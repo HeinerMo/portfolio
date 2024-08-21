@@ -1,9 +1,11 @@
 .website-title {
-  all: unset;
+  padding-top: 1em;
 }
 
-.website-title h2 {
+.website-title h1 {
   padding-left: 1em;
+  margin: 0em;
+  text-align: left;
 }
 
 .navbar-background {
@@ -13,6 +15,7 @@
 .navbar-container {
   display: flex;
   padding: .5em;
+  padding-bottom: 1em;
 }
 
 .navbar {
@@ -45,6 +48,7 @@
   height: fit-content;
   width: fit-content;
   font-weight: bold;
+  margin-right: 1em;
 }
 
 .navbar-toggler {
