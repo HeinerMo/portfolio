@@ -3,10 +3,6 @@
   "HomeNav": "Inicio",
   "HomeIntroduction": "Soy ingeniero de software, fotógrafo y, en general, un nerd. La única cosa que amo más que aprender es aprender haciendo. Este sitio contiene algunas de las cosas que me gustan. ¡Siéntete libre de explorar!",
 
-  "SoftwareEngineeringTitle": "Soy un Ingeniero de Software", 
-  "SoftwareEngineeringNav": "Ingeniería de Software",
-  "SoftwareEngineeringIntro": "Solucionar problemas es mi pasión. ¿Conoces los pasos para solucionar un problema? Requerimientos, análisisi, diseño, construcción, pruebas, implantación y monitoreo.",
-
   "CertificationsTitle": "Certificaciones",
   "CurrentTechnologies": "Tecnologías que utilizo actualmente:",
   "PreviousTechnologies": "Techologías que he utilizado en el pasado:",
@@ -20,5 +16,9 @@
   "PhotographyNav": "Fotografía",
 
   "ContactNav": "Contacto",
-  "ContactTitle": "Contacto"
+  "ContactTitle": "Contacto",
+
+  "AboutNav": "About me",
+  "AboutTitle": "About me",
+  "AboutIntro": "Intro"
 }

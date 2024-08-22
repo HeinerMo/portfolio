@@ -10,7 +10,6 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { NavbarComponent } from './components/pages/navbar/navbar.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
-import { SoftwareComponent } from './components/pages/software/software.component';
 import { PhotographyComponent } from './components/pages/photography/photography.component';
 import { ImageModalComponent } from './components/reusable/image-modal/image-modal.component';
 
@@ -20,6 +19,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { AboutComponent } from './components/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -28,9 +28,9 @@ import { MatListModule } from '@angular/material/list';
     NavbarComponent,
     ProjectsComponent,
     ContactComponent,
-    SoftwareComponent,
     PhotographyComponent,
     ImageModalComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserAnimationsModule,

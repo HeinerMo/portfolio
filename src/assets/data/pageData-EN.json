@@ -3,10 +3,6 @@
   "HomeIntroduction": "I'm a software engineer, photographer and generally a nerd. The only thing I love more than learning is learning by doing. This site contains some of the things I like. Feel free to look around!",
   "HomeNav": "Home",
 
-  "SoftwareEngineeringNav": "Software Engineering",
-  "SoftwareEngineeringIntro": "Problem solving is my passion. Do you know the steps to solve a problem? Requirements, Analysis, Design, Construction, Testing, Implantation and Monitoring!",
-  "SoftwareEngineeringTitle": "I'm a Software Engineer!", 
-
   "CertificationsTitle": "Certifications",
   "CurrentTechnologies": "What I currently work with",
   "PreviousTechnologies": "What I have worked with:",
@@ -20,5 +16,9 @@
   "PhotographyNav": "Photography",
 
   "ContactNav": "Contact",
-  "ContactTitle": "Contact"
+  "ContactTitle": "Contact",
+
+  "AboutNav": "About me",
+  "AboutTitle": "About me",
+  "AboutIntro": "Intro"
 }

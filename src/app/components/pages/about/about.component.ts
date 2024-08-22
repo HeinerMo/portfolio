@@ -5,12 +5,11 @@ import { TechnologyService } from 'src/services/TechnologyService';
 import { PageDataService } from 'src/services/PageDataService';
 
 @Component({
-	selector: 'app-software',
-	templateUrl: './software.component.html',
-	styleUrls: ['./software.component.css']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css']
 })
-export class SoftwareComponent implements OnInit {
-
+export class AboutComponent implements OnInit {
 	usedTechnologies: Technology[] = []
 	currentTechnologies: Technology[] = []
 	handsetData: HandsetData = HandsetData.getInstance()
@@ -19,6 +18,8 @@ export class SoftwareComponent implements OnInit {
 	certificationsTitle?: string
 	inUseTitle?: string
 	usedTitle?: string
+	softwareTitle?: string
+	softwareIntro?: string
 
 	constructor(private technologyService: TechnologyService, private pageDataService : PageDataService) {
 
@@ -26,11 +27,11 @@ export class SoftwareComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.pageDataService.getValue('SoftwareEngineeringIntro').subscribe(value => {
-			this.intro = value;
+			this.softwareIntro = value;
 		})
 
 		this.pageDataService.getValue('SoftwareEngineeringTitle').subscribe(value => {
-			this.title = value;
+			this.softwareTitle = value;
 		})
 
 		this.pageDataService.getValue('CertificationsTitle').subscribe(value => {
@@ -43,6 +44,14 @@ export class SoftwareComponent implements OnInit {
 
 		this.pageDataService.getValue('PreviousTechnologies').subscribe(value => {
 			this.usedTitle = value;
+		})
+
+		this.pageDataService.getValue('HomeIntroduction').subscribe(value => {
+		  this.intro = value;
+		})
+
+		this.pageDataService.getValue('HomeTitle').subscribe(value => {
+		  this.title = value;
 		})
 
 		this.loadTechnologies();

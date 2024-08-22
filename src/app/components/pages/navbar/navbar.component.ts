@@ -16,10 +16,10 @@ export class NavbarComponent implements OnInit {
   collapsed: boolean = true;
 
   homeNavTitle? : string;
-  softwareNavTitle? : string;
   projectsNavTitle? : string; 
   photographyNavTitle? : string;
   contactNavTitle? : string;
+  aboutNavTitle? : string;
 
   currentLanguage? : string;
 
@@ -38,10 +38,6 @@ export class NavbarComponent implements OnInit {
       this.homeNavTitle = value;
     })
 
-    this.pageDataService.getValue('SoftwareEngineeringNav').subscribe(value => {
-      this.softwareNavTitle = value;
-    })
-
     this.pageDataService.getValue('SoftwareProjectsNav').subscribe(value => {
       this.projectsNavTitle = value;
     })
@@ -54,6 +50,9 @@ export class NavbarComponent implements OnInit {
       this.contactNavTitle = value;
     })
 
+    this.pageDataService.getValue('AboutNav').subscribe(value => {
+      this.aboutNavTitle = value;
+    })
   }
 
   public toggle() {
