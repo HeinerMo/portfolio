@@ -1,41 +1,43 @@
-<div class="website-title navbar-background">
-<a class="navbar-brand" href="#"><h1>Heiner M.</h1></a>
-</div>
-<div class="navbar-container navbar-background">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-      </button>
+<div class="navbar-background">
+  <div class="website-title">
+    <a class="navbar-brand navbar-color" href="#"><h1>Heiner M.</h1></a>
+  </div>
+  <div class="navbar-container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+	<button class="navbar-toggler general-background" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	  <li class="nav-item">
-	    <a class="nav-link active" routerLink="/app-home" routerLinkActive="active-link"
-							      ariaCurrentWhenActive="page">{{homeNavTitle}}</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link active" routerLink="/app-software" routerLinkActive="active-link"
-								  ariaCurrentWhenActive="page">{{softwareNavTitle}}</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link active" routerLink="/app-projects" routerLinkActive="active-link"
-								  ariaCurrentWhenActive="page">{{projectsNavTitle}}</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link active" routerLink="/app-photography" routerLinkActive="active-link"
-								     ariaCurrentWhenActive="page">{{photographyNavTitle}}</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link active" routerLink="/app-contact" routerLinkActive="active-link"
-								 ariaCurrentWhenActive="page">{{contactNavTitle}}</a>
-	  </li>
-	</ul>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	    <li class="nav-item">
+	      <a class="nav-link" routerLink="/app-home" routerLinkActive="active-link"
+								ariaCurrentWhenActive="page">{{homeNavTitle}}</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" routerLink="/app-software" routerLinkActive="active-link"
+								    ariaCurrentWhenActive="page">{{softwareNavTitle}}</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" routerLink="/app-projects" routerLinkActive="active-link"
+								    ariaCurrentWhenActive="page">{{projectsNavTitle}}</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" routerLink="/app-photography" routerLinkActive="active-link"
+								       ariaCurrentWhenActive="page">{{photographyNavTitle}}</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" routerLink="/app-contact" routerLinkActive="active-link"
+								   ariaCurrentWhenActive="page">{{contactNavTitle}}</a>
+	    </li>
+	  </ul>
+	</div>
       </div>
+    </nav>
+    <div class="d-flex ms-auto">
+      <button class="language-button general-background" (click)="changeLanguage()" id="toggle-language">{{currentLanguage}}</button>
     </div>
-  </nav>
-  <div class="d-flex ms-auto">
-    <button class="btn language-button" (click)="changeLanguage()" id="toggle-language">{{currentLanguage}}</button>
   </div>
 </div>
 
