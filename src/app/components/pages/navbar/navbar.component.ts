@@ -46,10 +46,6 @@ export class NavbarComponent implements OnInit {
       this.photographyNavTitle = value;
     })
 
-    this.pageDataService.getValue('ContactNav').subscribe(value => {
-      this.contactNavTitle = value;
-    })
-
     this.pageDataService.getValue('AboutNav').subscribe(value => {
       this.aboutNavTitle = value;
     })

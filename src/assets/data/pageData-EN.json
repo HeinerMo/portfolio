@@ -1,6 +1,6 @@
 {
-  "HomeTitle": "Hello, I'm Heiner!",
-  "HomeIntroduction": "I'm a software engineer, photographer and generally a nerd. The only thing I love more than learning is learning by doing. This site contains some of the things I like. Feel free to look around!",
+  "HomeTitle": "Welcome!",
+  "HomeIntroduction": "This site is a work in progress that aims to archive and display some things of my interest. Currently you can see a small gallery of my photography work and some of my software projects from the past. Please, feel free to look around. If you wish to contact me, please refer to the <About Me> section.",
   "HomeNav": "Home",
 
   "CertificationsTitle": "Certifications",
@@ -19,6 +19,7 @@
   "ContactTitle": "Contact",
 
   "AboutNav": "About me",
-  "AboutTitle": "About me",
-  "AboutIntro": "Intro"
+  "AboutTitle": "Hello, I'm Heiner.",
+  "AboutIntro": "I'm a software engineer, photographer and generally a nerd. The only thing I love more than learning is learning by doing. Here you can find my contact information, certifications and some of the technologies I have used."
+
 }

@@ -1,7 +1,7 @@
 {
-  "HomeTitle": "Hola, soy Heiner!",
+  "HomeTitle": "Bienvenid@",
   "HomeNav": "Inicio",
-  "HomeIntroduction": "Soy ingeniero de software, fotógrafo y, en general, un nerd. La única cosa que amo más que aprender es aprender haciendo. Este sitio contiene algunas de las cosas que me gustan. ¡Siéntete libre de explorar!",
+  "HomeIntroduction": "Este sitio es un trabajo en progreso que tiene como objetivo archivar y mostrar algunas cosas de mi interés. Actualmente, puedes ver una pequeña galería de mi trabajo fotográfico y algunos de mis proyectos de software del pasado. Por favor, siéntete libre de explorar. Si deseas contactarme, por favor dirígete a la sección <Sobre Mí>.",
 
   "CertificationsTitle": "Certificaciones",
   "CurrentTechnologies": "Tecnologías que utilizo actualmente:",
@@ -18,7 +18,7 @@
   "ContactNav": "Contacto",
   "ContactTitle": "Contacto",
 
-  "AboutNav": "About me",
-  "AboutTitle": "About me",
-  "AboutIntro": "Intro"
+  "AboutNav": "Sobre mí",
+  "AboutTitle": "Hola, soy Heiner.",
+  "AboutIntro": "Soy ingeniero de software, fotógrafo y, en general, un nerd. La única cosa que amo más que aprender es aprender haciendo. Aquí puedes encontrar mi información de contacto, certificaciones y angulas de las tecnologías que he utilizado."
 }

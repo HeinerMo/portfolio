@@ -20,20 +20,13 @@ export class AboutComponent implements OnInit {
 	usedTitle?: string
 	softwareTitle?: string
 	softwareIntro?: string
+	contactTitle?: string
 
 	constructor(private technologyService: TechnologyService, private pageDataService : PageDataService) {
 
 	}
 
 	ngOnInit(): void {
-		this.pageDataService.getValue('SoftwareEngineeringIntro').subscribe(value => {
-			this.softwareIntro = value;
-		})
-
-		this.pageDataService.getValue('SoftwareEngineeringTitle').subscribe(value => {
-			this.softwareTitle = value;
-		})
-
 		this.pageDataService.getValue('CertificationsTitle').subscribe(value => {
 			this.certificationsTitle = value;
 		})
@@ -46,13 +39,18 @@ export class AboutComponent implements OnInit {
 			this.usedTitle = value;
 		})
 
-		this.pageDataService.getValue('HomeIntroduction').subscribe(value => {
+		this.pageDataService.getValue('AboutIntro').subscribe(value => {
 		  this.intro = value;
 		})
 
-		this.pageDataService.getValue('HomeTitle').subscribe(value => {
+		this.pageDataService.getValue('AboutTitle').subscribe(value => {
 		  this.title = value;
 		})
+
+		this.pageDataService.getValue("ContactTitle").subscribe(value => {
+		  this.contactTitle = value;
+		})
+
 
 		this.loadTechnologies();
 	}
