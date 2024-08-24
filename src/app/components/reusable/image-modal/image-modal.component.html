@@ -1,12 +1,12 @@
 <div class="dialog-content">
-    <div mat-dialog-content class="mat-dialog-content" (click)="close()">
-        <h1 mat-dialog-title>{{ data.title }}</h1>
-        <div class="image-container">
-            <img [src]="data.path" alt="{{ data.title }}">
-        </div>
-        <div class="image-information">
-            <p>Date: {{ data.date }}</p>
-            <p *ngFor="let detail of data.details">{{ detail }}</p>
-        </div>
+  <div mat-dialog-content class="mat-dialog-content" (click)="close()">
+    <h1 mat-dialog-title>{{ data.title }}</h1>
+    <div class="image-container">
+      <img [src]="data.path" alt="{{ data.title }}">
     </div>
+    <div class="image-information">
+      <p>Date: {{ data.date }}</p>
+      <p *ngFor="let detail of data.details">{{ detail }}</p>
+    </div>
+  </div>
 </div>
