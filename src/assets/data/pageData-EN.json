@@ -20,6 +20,10 @@
 
   "AboutNav": "About me",
   "AboutTitle": "Hello, I'm Heiner.",
-  "AboutIntro": "I'm a software engineer, photographer and generally a nerd. The only thing I love more than learning is learning by doing. Here you can find my contact information, certifications and some of the technologies I have used."
+  "AboutIntro": "I'm a software engineer, photographer and generally a nerd. The only thing I love more than learning is learning by doing. Here you can find my contact information, certifications and some of the technologies I have used.",
+
+  "ArticlesNav": "Articles", 
+  "ArticlesTitle": "Articles",
+  "ArticlesIntro": "Here you can find my articles in multiple topics."
 
 }

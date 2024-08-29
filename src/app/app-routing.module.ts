@@ -5,6 +5,7 @@ import { NavbarComponent } from './components/pages/navbar/navbar.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { PhotographyComponent } from './components/pages/photography/photography.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { ArticlesComponent } from './components/pages/articles/articles.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
   ,{ path: 'app-projects', component: ProjectsComponent }
   ,{ path: 'app-photography', component: PhotographyComponent}
   ,{ path: 'app-about', component: AboutComponent}
+  ,{ path: 'app-articles', component: ArticlesComponent}
   ,{ path: '**', redirectTo: 'app-home' }
 ];
 

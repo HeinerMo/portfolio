@@ -20,6 +20,7 @@ export class NavbarComponent implements OnInit {
   photographyNavTitle? : string;
   contactNavTitle? : string;
   aboutNavTitle? : string;
+  articlesNavTitle? : string;
 
   currentLanguage? : string;
 
@@ -48,6 +49,10 @@ export class NavbarComponent implements OnInit {
 
     this.pageDataService.getValue('AboutNav').subscribe(value => {
       this.aboutNavTitle = value;
+    })
+
+    this.pageDataService.getValue('ArticlesNav').subscribe(value => {
+      this.articlesNavTitle = value;
     })
   }
 
