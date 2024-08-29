@@ -19,6 +19,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { AboutComponent } from './components/pages/about/about.component';
+import { ArticlesComponent } from './components/pages/articles/articles.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AboutComponent } from './components/pages/about/about.component';
     PhotographyComponent,
     ImageModalComponent,
     AboutComponent,
+    ArticlesComponent,
   ],
   imports: [
     BrowserAnimationsModule,
