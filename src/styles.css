@@ -85,9 +85,7 @@ h3 {
     margin-right: 1em;
     max-width: 100%;
     cursor: pointer;
-    padding: 0.5em;
     border: none;
-    outline: 1px solid #888;
     transition: all 0.2s ease;
     background: #0000;
 }
