@@ -111,6 +111,7 @@
         "name": "Automation Anywhere",
         "logoPath": "assets/img/automationanywhere_logo.svg",
         "url": "https://www.automationanywhere.com/",
-        "currentlyUsed": "true"
+        "currentlyUsed": "false"
     }
+
 ]
