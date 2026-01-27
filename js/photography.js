@@ -1,4 +1,4 @@
-fetch('assets/data/Photography-ES.json')
+fetch('/assets/data/Photography-ES.json')
     .then(response => response.json())
     .then(data => {
         const albumContainer = document.getElementById('album-container');

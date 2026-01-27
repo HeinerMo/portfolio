@@ -1,6 +1,6 @@
 [
     {
-        "path": "assets/img/photography/20231126_153122.jpg",
+        "path": "/assets/img/photography/20231126_153122.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8"
@@ -9,7 +9,7 @@
         "title": "Tío en un viaje de pesca"
     },
     {
-        "path": "assets/img/photography/20231126_160247.jpg",
+        "path": "/assets/img/photography/20231126_160247.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8"
@@ -18,7 +18,7 @@
         "title": "Planta Hidroeléctrica Angostura"
     },
     {
-        "path": "assets/img/photography/20231201_162120.jpg",
+        "path": "/assets/img/photography/20231201_162120.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8"
@@ -27,7 +27,7 @@
         "title": "Cabaña Abandonada"
     },
     {
-        "path": "assets/img/photography/20231201_164010.jpg",
+        "path": "/assets/img/photography/20231201_164010.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8"
@@ -36,7 +36,7 @@
         "title": "Amanecer Oscuro"
     },
     {
-        "path": "assets/img/photography/20231204_051552.jpg",
+        "path": "/assets/img/photography/20231204_051552.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8"
@@ -45,7 +45,7 @@
         "title": "Luz de la Mañana"
     },
     {
-        "path": "assets/img/photography/20231204_062142.jpg",
+        "path": "/assets/img/photography/20231204_062142.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8"
@@ -54,7 +54,7 @@
         "title": "Autobús de mi Pueblo"
     },
     {
-        "path": "assets/img/photography/20240130_173502.jpg",
+        "path": "/assets/img/photography/20240130_173502.jpg",
         "details": [
             "Isla ubicada en la costa de Liberia, Guanacaste, Costa Rica.",
             "Cámara: Canon SL3",
@@ -64,7 +64,7 @@
         "title": "Isla Montosa"
     },
     {
-        "path": "assets/img/photography/20240705_192654.jpg",
+        "path": "/assets/img/photography/20240705_192654.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8",
@@ -74,7 +74,7 @@
         "title": "Líquenes Fluorescentes en UV"
     },
     {
-        "path": "assets/img/photography/20240705_193639.jpg",
+        "path": "/assets/img/photography/20240705_193639.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8",
@@ -84,7 +84,7 @@
         "title": "Líquenes Fluorescentes en UV"
     },
     {
-        "path": "assets/img/photography/20240705_194229.jpg",
+        "path": "/assets/img/photography/20240705_194229.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8",
@@ -94,7 +94,7 @@
         "title": "Líquenes Fluorescentes en UV"
     },
     {
-        "path": "assets/img/photography/20240705_194601.jpg",
+        "path": "/assets/img/photography/20240705_194601.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8",
@@ -104,7 +104,7 @@
         "title": "Opiliones Sp. Fluorescentes en UV"
     },
     {
-        "path": "assets/img/photography/20240705_195229.jpg",
+        "path": "/assets/img/photography/20240705_195229.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8",
@@ -114,7 +114,7 @@
         "title": "Líquenes Fluorescentes en UV"
     },
     {
-        "path": "assets/img/photography/20240705_195819.jpg",
+        "path": "/assets/img/photography/20240705_195819.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8",
@@ -124,7 +124,7 @@
         "title": "Líquenes Fluorescentes en UV"
     },
     {
-        "path": "assets/img/photography/20240705_200302.jpg",
+        "path": "/assets/img/photography/20240705_200302.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8",
@@ -134,7 +134,7 @@
         "title": "Líquenes Fluorescentes en UV"
     },
     {
-        "path": "assets/img/photography/20240705_201010.jpg",
+        "path": "/assets/img/photography/20240705_201010.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8",
@@ -144,7 +144,7 @@
         "title": "Líquenes Fluorescentes en UV"
     },
     {
-        "path": "assets/img/photography/20240705_201545.jpg",
+        "path": "/assets/img/photography/20240705_201545.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8",
@@ -154,7 +154,7 @@
         "title": "Líquenes Fluorescentes en UV"
     },
     {
-        "path": "assets/img/photography/orion test 4 50mm f2 800 ISO EDIT 1.jpg",
+        "path": "/assets/img/photography/orion test 4 50mm f2 800 ISO EDIT 1.jpg",
         "details": [
             "Este fue mi cuarto intento de tomar una foto de la Nebulosa de Orión.",
             "Cámara: Canon SL3",
@@ -164,7 +164,7 @@
         "title": "Nebulosa de Orión"
     },
     {
-        "path": "assets/img/photography/20200417_154152.jpg",
+        "path": "/assets/img/photography/20200417_154152.jpg",
         "details": [
             "Cámara: Samsung Galaxy Note 10"
         ],
@@ -172,7 +172,7 @@
         "title": "Bougainvillea Sp."
     },
     {
-        "path": "assets/img/photography/20200421_120205.jpg",
+        "path": "/assets/img/photography/20200421_120205.jpg",
         "details": [
             "Cámara: Samsung Galaxy Note 10"
         ],
@@ -180,7 +180,7 @@
         "title": "Abeja Aterrizando"
     },
     {
-        "path": "assets/img/photography/20200729_065403.jpg",
+        "path": "/assets/img/photography/20200729_065403.jpg",
         "details": [
             "Cámara: Samsung Galaxy Note 10"
         ],
@@ -188,7 +188,7 @@
         "title": "Rocío de la Mañana"
     },
     {
-        "path": "assets/img/photography/20210503_182748(1).jpg",
+        "path": "/assets/img/photography/20210503_182748(1).jpg",
         "details": [
             "Es muy raro ver uno de estos eventos, y mucho menos tener la suerte de capturarlo en una foto. Simplemente estaba tomando una imagen de larga exposición de las luces en la colina. Estaba en el lugar correcto en el momento correcto.",
             "Cámara: Samsung Galaxy Note 10"
@@ -197,7 +197,7 @@
         "title": "Bólido Ardiendo en la Atmósfera"
     },
     {
-        "path": "assets/img/photography/20220222_205152.jpg",
+        "path": "/assets/img/photography/20220222_205152.jpg",
         "details": [
             "Otro bólido que capturé accidentalmente mientras grababa un timelapse del cielo. De nuevo, en el lugar correcto en el momento correcto.",
             "Cámara: Samsung Galaxy Note 10"
@@ -206,7 +206,7 @@
         "title": "Bólido Ardiendo en la Atmósfera"
     },
     {
-        "path": "assets/img/photography/20210702_163112.png",
+        "path": "/assets/img/photography/20210702_163112.png",
         "details": [
             "Esta foto fue capturada usando un lente casero hecho con algunas piezas de microscopio y un tubo de aluminio de una linterna.",
             "Cámara: Samsung Galaxy Note 10",
@@ -216,7 +216,7 @@
         "title": "Hormigas Cuidando Áfidos"
     },
     {
-        "path": "assets/img/photography/20210702_165124(0).png",
+        "path": "/assets/img/photography/20210702_165124(0).png",
         "details": [
             "Esta foto fue capturada usando un lente casero hecho con algunas piezas de microscopio y un tubo de aluminio de una linterna.",
             "Cámara: Samsung Galaxy Note 10",
@@ -226,7 +226,7 @@
         "title": "Camponotus Sp."
     },
     {
-        "path": "assets/img/photography/20210702_165217.png",
+        "path": "/assets/img/photography/20210702_165217.png",
         "details": [
             "Esta foto fue capturada usando un lente casero hecho con algunas piezas de microscopio y un tubo de aluminio de una linterna.",
             "Cámara: Samsung Galaxy Note 10",
@@ -236,7 +236,7 @@
         "title": "Calliphora Vomitoria (Mosca Azul)"
     },
     {
-        "path": "assets/img/photography/20210705_135720.png",
+        "path": "/assets/img/photography/20210705_135720.png",
         "details": [
             "Esta foto fue capturada usando un lente casero hecho con algunas piezas de microscopio y un tubo de aluminio de una linterna.",
             "Cámara: Samsung Galaxy Note 10",
@@ -246,7 +246,7 @@
         "title": "Deinopidae Sp. (Araña Tejedora de Red)"
     },
     {
-        "path": "assets/img/photography/20211218_173122.jpg",
+        "path": "/assets/img/photography/20211218_173122.jpg",
         "details": [
             "Esta foto fue capturada usando un lente casero hecho con algunas piezas de microscopio y un tubo de aluminio de una linterna.",
             "Cámara: Samsung Galaxy Note 10",
@@ -256,7 +256,7 @@
         "title": "Alas de Libélula"
     },
     {
-        "path": "assets/img/photography/20220206_180225.jpg",
+        "path": "/assets/img/photography/20220206_180225.jpg",
         "details": [
             "Cámara: Samsung Galaxy Note 10"
         ],
@@ -264,7 +264,7 @@
         "title": "Planta Hidroeléctrica Angostura"
     },
     {
-        "path": "assets/img/photography/20220313_100846.jpg",
+        "path": "/assets/img/photography/20220313_100846.jpg",
         "details": [
             "Cámara: Samsung Galaxy Note 10"
         ],
@@ -272,7 +272,7 @@
         "title": "Bougainvillea Sp."
     },
     {
-        "path": "assets/img/photography/20220731_180958.jpg",
+        "path": "/assets/img/photography/20220731_180958.jpg",
         "details": [
             "Cámara: Samsung Galaxy Note 10"
         ],
@@ -280,7 +280,7 @@
         "title": "Atardecer en mi Pueblo"
     },
     {
-        "path": "assets/img/photography/20230121_094606.jpg",
+        "path": "/assets/img/photography/20230121_094606.jpg",
         "details": [
             "Cámara: Samsung Galaxy Note 10"
         ],
@@ -288,7 +288,7 @@
         "title": "Thomisidae Sp (Araña Cangrejo)"
     },
     {
-        "path": "assets/img/photography/HeinerMongeLopez.jpg",
+        "path": "/assets/img/photography/HeinerMongeLopez.jpg",
         "details": [
             "Este es un apilado macro hecho con mi teléfono en ese momento. Este fue mi tercer intento.",
             "Cámara: Samsung Galaxy Note 10"
@@ -297,7 +297,7 @@
         "title": "Amblypygi Sp."
     },
     {
-        "path": "assets/img/photography/IMG_7348_01.jpg",
+        "path": "/assets/img/photography/IMG_7348_01.jpg",
         "details": [
             "Cámara: Canon SL3",
             "Lente: Canon EF 50mm F1.8"
@@ -306,7 +306,7 @@
         "title": "Porthidium Nasutum"
     },
     {
-        "path": "assets/img/photography/resultado pata fondo negro.png",
+        "path": "/assets/img/photography/resultado pata fondo negro.png",
         "details": [
             "Este es un apilado macro hecho con mi teléfono en ese momento.",
             "Cámara: Samsung Galaxy Note 10"
@@ -315,7 +315,7 @@
         "title": "Garra de Saltamontes"
     },
     {
-        "path": "assets/img/photography/salida 10-8-2021.png",
+        "path": "/assets/img/photography/salida 10-8-2021.png",
         "details": [
             "Uno de mis primeros intentos de capturar la vía láctea con mi teléfono.",
             "Cámara: Samsung Galaxy Note 10"
@@ -324,7 +324,7 @@
         "title": "Vía Láctea"
     },
     {
-        "path": "assets/img/photography/Untitled1-Recovered.jpg",
+        "path": "/assets/img/photography/Untitled1-Recovered.jpg",
         "details": [
             "Este es un apilado macro hecho con mi teléfono en ese momento.",
             "Cámara: Samsung Galaxy Note 10"
