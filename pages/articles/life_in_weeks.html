@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heiner Monge - Vida en Semanas</title>
+
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/life_in_weeks.css">
+</head>
+
+<header>
+  <div id="navbar">
+    <script src="/js/navbar.js" defer></script>
+  </div>
+</header>
+
+<body>
+  <script src="/js/life_in_weeks.js" defer></script>
+  <div class="container" id="pageContent">
+    <h1>Tu vida en semanas</h1>
+    <p>Hay muchas calculadoras en línea para poder visualizar nuestra vida en semanas.
+      Este es un ejercicio que nos brinda una perspectiva que pocas veces consideramos con respecto al tiempo que
+      tenemos disponible.</p>
+    <p>Y esta es mi propia implementación de esta calculadora. Los cuadrados verdes representan semanas de vida restantes y los grises semanas que ya se han vivido. La cantidad de semanas es de 3650,
+      asumiendo una expectativa de vida de 70 años.
+    </p>
+    <form id="dateForm">
+      <label class="normal-text" for="date">Por favor, selecciona tu fecha de nacimiento:</label>
+      <input class="normal-text" type="date" id="date" name="date">
+    </form>
+    <br>
+    <div class="weeks" id="weeks">
+    </div>
+  </div>
+
+</body>
+
+</html>
