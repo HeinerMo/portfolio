@@ -1,5 +1,6 @@
 .website-title {
-  padding-top: 1em;
+  padding-top: 2em;
+  padding-left: 2em;
 }
 
 .website-title h1 {
@@ -8,6 +9,10 @@
   text-align: left;
   color: #eee;
   font-size: 3em;
+}
+
+.website-title img {
+  width: 20em;
 }
 
 .navbar-container {
@@ -19,23 +24,23 @@
 }
 
 .nav-ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .nav-item {
-    height: 100%;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #eee;
-    margin-right: 1em;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #eee;
+  margin-right: 1em;
 }
 
 .nav-item:hover {
