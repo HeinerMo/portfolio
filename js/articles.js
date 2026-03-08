@@ -1,7 +1,6 @@
 fetch('/assets/data/Articles.json')
     .then(response => response.json())
     .then(data => {
-        console.log("Running");
         const articleContainer = document.getElementById('articles-container');
         articleContainer.innerHTML = '';
 
@@ -9,7 +8,7 @@ fetch('/assets/data/Articles.json')
 
             const articleElement = document.createElement('a');
             articleElement.classList.add('article');
-            articleElement.href = item.path;
+            articleElement.href = `#${item.path}`;
 
             // Create the title element
             const titleElement = document.createElement('h3');
